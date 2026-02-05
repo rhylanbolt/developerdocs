@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opti-X Developer Documentation</title>
+  <title>Personalize Developer Documentation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -259,15 +259,15 @@
   <div class="layout">
   <nav id="sidebar">
     <div class="sidebar-header">
-      <h2>Opti-X Docs</h2>
+      <h2>Personalize Docs</h2>
       <p class="sidebar-subtitle">Developer Documentation</p>
     </div>
     <ul class="nav-tree">
-    <li class="nav-item"><a href="#index" class="nav-link">Opti-X Developer Documentation</a></li>
+    <li class="nav-item"><a href="#index" class="nav-link">Personalize Developer Documentation</a></li>
     <li class="nav-section">
       <button class="section-toggle" aria-expanded="true">Introduction<span class="toggle-icon">&#9662;</span></button>
       <ul class="section-children">
-        <li><a href="#what-is-optix" class="nav-link">What is Opti-X?</a></li>
+        <li><a href="#what-is-optix" class="nav-link">What is Personalize?</a></li>
         <li><a href="#key-concepts" class="nav-link">Key Concepts</a></li>
         <li><a href="#glossary" class="nav-link">Glossary</a></li>
       </ul>
@@ -298,7 +298,7 @@
         <li><a href="#recommend-api" class="nav-link">Recommend API</a></li>
         <li><a href="#smart-search-api" class="nav-link">Smart Search API</a></li>
         <li><a href="#intelligent-layouts-api" class="nav-link">Intelligent Layouts API</a></li>
-        <li><a href="#momentum-api" class="nav-link">Momentum API</a></li>
+        <li><a href="#momentum-api" class="nav-link">Momentum API (Deprecated)</a></li>
         <li><a href="#gaming-inventory-api" class="nav-link">Gaming Inventory API</a></li>
         <li><a href="#rate-limits" class="nav-link">Rate Limits</a></li>
         <li><a href="#error-handling" class="nav-link">Error Handling</a></li>
@@ -312,7 +312,6 @@
         <li><a href="#gaming-events" class="nav-link">Gaming Events</a></li>
         <li><a href="#sports-events" class="nav-link">Sports Events</a></li>
         <li><a href="#ecommerce-events" class="nav-link">E-commerce Events</a></li>
-        <li><a href="#kinesis-integration" class="nav-link">Kinesis Integration</a></li>
       </ul>
     </li>
     <li class="nav-section">
@@ -324,9 +323,9 @@
       </ul>
     </li>
     <li class="nav-section">
-      <button class="section-toggle" aria-expanded="true">Banners<span class="toggle-icon">&#9662;</span></button>
+      <button class="section-toggle" aria-expanded="true">Smart Content<span class="toggle-icon">&#9662;</span></button>
       <ul class="section-children">
-        <li><a href="#banner-deployment" class="nav-link">Banner Deployment</a></li>
+        <li><a href="#banner-deployment" class="nav-link">Smart Content Deployment</a></li>
       </ul>
     </li>
     <li class="nav-section">
@@ -341,10 +340,10 @@
     <button id="sidebar-toggle" aria-label="Toggle sidebar">&#9776;</button>
     <main id="content">
 <section id="index" class="doc-section">
-<h1>Opti-X Developer Documentation</h1>
-<p>Welcome to the Opti-X developer documentation. This guide helps you integrate AI-powered personalization into your gaming, sports betting, or e-commerce platform.</p>
-<h2>What is Opti-X?</h2>
-<p>Opti-X is Optimove&#39;s real-time personalization engine. It analyzes user behavior and inventory data to deliver personalized recommendations, search results, and dynamic layouts. Whether you&#39;re showing game suggestions to a casino player, match recommendations to a sports bettor, or product picks to an online shopper, Opti-X helps you show the right content to the right user at the right time.</p>
+<h1>Personalize Developer Documentation</h1>
+<p>Welcome to the Personalize developer documentation. This guide helps you integrate AI-powered personalization into your gaming, sports betting, or e-commerce platform.</p>
+<h2>What is Personalize?</h2>
+<p>Personalize is Optimove&#39;s real-time personalization engine. It analyzes user behavior and inventory data to deliver personalized recommendations, search results, and dynamic layouts. Whether you&#39;re showing game suggestions to a casino player, match recommendations to a sports bettor, or product picks to an online shopper, Personalize helps you show the right content to the right user at the right time.</p>
 <hr>
 <h2>Quick Links</h2>
 <table>
@@ -360,7 +359,7 @@
 </tr>
 <tr>
 <td><a href="#glossary">Glossary</a></td>
-<td>Definitions for all Opti-X terms</td>
+<td>Definitions for all Personalize terms</td>
 </tr>
 <tr>
 <td><a href="#key-concepts">Key Concepts</a></td>
@@ -434,21 +433,21 @@
 <h2>Getting Help</h2>
 <ul>
 <li><strong>Technical Support</strong>: Contact your Optimove Customer Success Manager</li>
-<li><strong>API Status</strong>: Check the Opti-X Admin Panel for system status</li>
+<li><strong>API Status</strong>: Check the Personalize Admin Panel for system status</li>
 <li><strong>Changelog</strong>: Review recent updates in the Admin Panel under Release Notes</li>
 </ul>
 <hr>
 <h2>Related Topics</h2>
 <ul>
-<li><a href="#what-is-optix">What is Opti-X?</a> - Learn about Opti-X capabilities</li>
+<li><a href="#what-is-optix">What is Personalize?</a> - Learn about Personalize capabilities</li>
 <li><a href="#prerequisites">Prerequisites</a> - Get your API keys</li>
 <li><a href="#first-api-call">First API Call</a> - Start integrating today</li>
 </ul>
 
 </section>
 <section id="what-is-optix" class="doc-section">
-<h1>What is Opti-X?</h1>
-<p>Opti-X is Optimove&#39;s AI-powered personalization engine that delivers real-time recommendations, personalized search results, and dynamic layouts across gaming, sports betting, and e-commerce platforms.</p>
+<h1>What is Personalize?</h1>
+<p>Personalize is Optimove&#39;s AI-powered personalization engine that delivers real-time recommendations, personalized search results, and dynamic layouts across gaming, sports betting, and e-commerce platforms.</p>
 <hr>
 <h2>The Business Problem</h2>
 <p>Your platform has thousands of games, matches, or products. Your users have limited time and attention. Without personalization:</p>
@@ -458,20 +457,20 @@
 <li>Every user sees the same homepage, regardless of their preferences</li>
 <li>Search returns generic results that don&#39;t account for user behavior</li>
 </ul>
-<p>Opti-X solves these problems by analyzing what each user does and recommending what they&#39;ll want next.</p>
+<p>Personalize solves these problems by analyzing what each user does and recommending what they&#39;ll want next.</p>
 <hr>
-<h2>What Opti-X Does</h2>
+<h2>What Personalize Does</h2>
 <h3>Real-Time Recommendations</h3>
-<p>Opti-X analyzes user behavior (game launches, bets placed, purchases made) and inventory data (games, matches, products) to generate personalized recommendations. These recommendations update in real-time as users interact with your platform.</p>
+<p>Personalize analyzes user behavior (game launches, bets placed, purchases made) and inventory data (games, matches, products) to generate personalized recommendations. These recommendations update in real-time as users interact with your platform.</p>
 <p><strong>Example</strong>: A casino player who frequently plays high-volatility slots sees new high-volatility releases at the top of their homepage. A player who prefers table games sees blackjack and roulette recommendations instead.</p>
 <h3>Smart Search</h3>
-<p>Traditional search matches keywords. Opti-X Smart Search understands user intent and personalizes results based on behavior patterns. Two users searching for &quot;slots&quot; see different results based on their preferences.</p>
+<p>Traditional search matches keywords. Personalize Smart Search understands user intent and personalizes results based on behavior patterns. Two users searching for &quot;slots&quot; see different results based on their preferences.</p>
 <p><strong>Example</strong>: User A searches &quot;football&quot; and sees Premier League matches because they frequently bet on English football. User B searches &quot;football&quot; and sees NFL games because they prefer American football.</p>
 <h3>Dynamic Layouts</h3>
-<p>Opti-X can personalize entire page layouts, not just individual recommendation carousels. The system determines which sections to show, in what order, based on each user&#39;s interests.</p>
+<p>Personalize can personalize entire page layouts, not just individual recommendation carousels. The system determines which sections to show, in what order, based on each user&#39;s interests.</p>
 <p><strong>Example</strong>: A sports bettor who primarily wagers on live events sees the &quot;Live Now&quot; section prominently displayed. A user who plans bets in advance sees upcoming fixtures first.</p>
 <h3>Campaign Integration</h3>
-<p>Opti-X integrates with Optimove&#39;s campaign management to ensure promotional content appears alongside personalized recommendations. Campaigns can target specific user segments with relevant offers.</p>
+<p>Personalize integrates with Optimove&#39;s campaign management to ensure promotional content appears alongside personalized recommendations. Campaigns can target specific user segments with relevant offers.</p>
 <hr>
 <h2>Supported Verticals</h2>
 <h3>Gaming (iGaming / Online Casino)</h3>
@@ -517,17 +516,17 @@
 <li>More game sessions (gaming)</li>
 </ul>
 <hr>
-<h2>How Opti-X Works</h2>
-<p>Opti-X operates on three core data flows:</p>
+<h2>How Personalize Works</h2>
+<p>Personalize operates on three core data flows:</p>
 <ol>
-<li><p><strong>Activity Data (Input)</strong>: Your platform sends user events to Opti-X. Every page view, game launch, bet placement, or purchase helps the system understand user preferences.</p>
+<li><p><strong>Activity Data (Input)</strong>: Your platform sends user events to Personalize. Every page view, game launch, bet placement, or purchase helps the system understand user preferences.</p>
 </li>
-<li><p><strong>Inventory Data (Input)</strong>: You provide your content catalog—games, matches, products—with relevant attributes. Opti-X uses this data to understand what&#39;s available and how to categorize it.</p>
+<li><p><strong>Inventory Data (Input)</strong>: You provide your content catalog—games, matches, products—with relevant attributes. Personalize uses this data to understand what&#39;s available and how to categorize it.</p>
 </li>
-<li><p><strong>Recommendations (Output)</strong>: Your platform requests personalized content from Opti-X. The system returns ranked recommendations based on user behavior, inventory attributes, and business rules.</p>
+<li><p><strong>Recommendations (Output)</strong>: Your platform requests personalized content from Personalize. The system returns ranked recommendations based on user behavior, inventory attributes, and business rules.</p>
 </li>
 </ol>
-<p>This cycle creates a feedback loop: as users interact with recommendations, Opti-X learns and improves future suggestions.</p>
+<p>This cycle creates a feedback loop: as users interact with recommendations, Personalize learns and improves future suggestions.</p>
 <hr>
 <h2>Architecture Overview</h2>
 <pre><code>┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -593,7 +592,7 @@
 <h2>Related Topics</h2>
 <ul>
 <li><a href="#key-concepts">Key Concepts</a> - Learn the ABC framework</li>
-<li><a href="#glossary">Glossary</a> - Understand Opti-X terminology</li>
+<li><a href="#glossary">Glossary</a> - Understand Personalize terminology</li>
 <li><a href="#prerequisites">Prerequisites</a> - Get your API credentials</li>
 <li><a href="#first-api-call">First API Call</a> - Start integrating</li>
 </ul>
@@ -601,18 +600,18 @@
 </section>
 <section id="key-concepts" class="doc-section">
 <h1>Key Concepts</h1>
-<p>This guide explains the core concepts you need to understand before integrating Opti-X. Master these fundamentals, and the rest of the documentation will make sense.</p>
+<p>This guide explains the core concepts you need to understand before integrating Personalize. Master these fundamentals, and the rest of the documentation will make sense.</p>
 <hr>
 <h2>The ABC Framework</h2>
-<p>Opti-X integration follows the ABC pattern:</p>
+<p>Personalize integration follows the ABC pattern:</p>
 <ul>
-<li><strong>A</strong>ctivity - Send user events to Opti-X</li>
+<li><strong>A</strong>ctivity - Send user events to Personalize</li>
 <li><strong>B</strong>ettable Content (Inventory) - Provide your content catalog</li>
 <li><strong>C</strong>onsume - Request personalized recommendations</li>
 </ul>
-<p>Each component is essential. Activity data teaches Opti-X about user preferences. Inventory data tells Opti-X what content exists. Consumption APIs deliver personalized results.</p>
+<p>Each component is essential. Activity data teaches Personalize about user preferences. Inventory data tells Personalize what content exists. Consumption APIs deliver personalized results.</p>
 <h3>A - Activity (User Events)</h3>
-<p>Activity data represents everything users do on your platform. When a user launches a game, places a bet, or purchases a product, you send that event to Opti-X. These events build a behavioral profile for each user.</p>
+<p>Activity data represents everything users do on your platform. When a user launches a game, places a bet, or purchases a product, you send that event to Personalize. These events build a behavioral profile for each user.</p>
 <p><strong>Common activity events by vertical:</strong></p>
 <table>
 <thead>
@@ -643,7 +642,7 @@
 <td>Wishlist add</td>
 </tr>
 </tbody></table>
-<p><strong>Why Activity Matters</strong>: Without activity data, Opti-X can&#39;t personalize. A user with no tracked activity receives generic, non-personalized recommendations. More activity data leads to better personalization.</p>
+<p><strong>Why Activity Matters</strong>: Without activity data, Personalize can&#39;t personalize. A user with no tracked activity receives generic, non-personalized recommendations. More activity data leads to better personalization.</p>
 <p><strong>Example Activity Event (Gaming)</strong>:</p>
 <pre><code class="language-json">{
   &quot;event_type&quot;: &quot;game_launch&quot;,
@@ -655,7 +654,7 @@
 }
 </code></pre>
 <h3>B - Bettable Content (Inventory)</h3>
-<p>Inventory represents all the content you can recommend: games, sports events, products. You provide this data to Opti-X with attributes that describe each item.</p>
+<p>Inventory represents all the content you can recommend: games, sports events, products. You provide this data to Personalize with attributes that describe each item.</p>
 <p><strong>Inventory attributes by vertical:</strong></p>
 <table>
 <thead>
@@ -691,7 +690,7 @@
 <td>Attributes</td>
 </tr>
 </tbody></table>
-<p><strong>Why Inventory Matters</strong>: Opti-X can only recommend items in your inventory. If a game isn&#39;t in the inventory feed, it won&#39;t appear in recommendations. Keep your inventory current and attribute-rich for better personalization.</p>
+<p><strong>Why Inventory Matters</strong>: Personalize can only recommend items in your inventory. If a game isn&#39;t in the inventory feed, it won&#39;t appear in recommendations. Keep your inventory current and attribute-rich for better personalization.</p>
 <p><strong>Example Inventory Item (Gaming)</strong>:</p>
 <pre><code class="language-json">{
   &quot;game_id&quot;: &quot;starburst-xxxtreme&quot;,
@@ -705,7 +704,7 @@
 }
 </code></pre>
 <h3>C - Consume (Get Recommendations)</h3>
-<p>Consume refers to requesting personalized content from Opti-X. When a user loads a page, your application calls the Opti-X API to get recommendations tailored to that user.</p>
+<p>Consume refers to requesting personalized content from Personalize. When a user loads a page, your application calls the Personalize API to get recommendations tailored to that user.</p>
 <p><strong>Common consumption scenarios:</strong></p>
 <table>
 <thead>
@@ -792,7 +791,7 @@
 </tr>
 </tbody></table>
 <p><strong>Why Placements Matter</strong>: Placements let you configure different personalization strategies for different parts of your platform. Your homepage might prioritize new releases while a category page might prioritize user preferences.</p>
-<p>You configure placements in the Opti-X Admin Panel, then reference them by ID in your API calls.</p>
+<p>You configure placements in the Personalize Admin Panel, then reference them by ID in your API calls.</p>
 <hr>
 <h2>Methods</h2>
 <p>A method defines the algorithm strategy used to select and rank recommendations. Different methods serve different business goals.</p>
@@ -817,7 +816,7 @@
 </tr>
 <tr>
 <td>Trending</td>
-<td>Ranks by recent popularity momentum</td>
+<td>Ranks by recent engagement growth rate</td>
 <td>Highlighting rising content</td>
 </tr>
 <tr>
@@ -837,12 +836,12 @@
 <p>A model is a trained machine learning algorithm that powers a method. While methods define the strategy, models are the actual implementations that generate recommendations.</p>
 <p><strong>How models work:</strong></p>
 <ol>
-<li>Opti-X trains models on your activity and inventory data</li>
+<li>Personalize trains models on your activity and inventory data</li>
 <li>Models learn patterns: &quot;Users who play Slot A also play Slot B&quot;</li>
 <li>When you request recommendations, models score and rank items</li>
 <li>The highest-scoring items appear in the response</li>
 </ol>
-<p><strong>Why Models Matter</strong>: Model quality directly impacts recommendation relevance. Models improve over time as they process more activity data. Opti-X handles model training automatically—your job is to send quality activity data.</p>
+<p><strong>Why Models Matter</strong>: Model quality directly impacts recommendation relevance. Models improve over time as they process more activity data. Personalize handles model training automatically—your job is to send quality activity data.</p>
 <hr>
 <h2>Tags</h2>
 <p>Tags are labels you attach to inventory items for filtering and targeting. Use tags to group content by business attributes that don&#39;t fit standard inventory fields.</p>
@@ -901,7 +900,7 @@
 <hr>
 <h2>Context ID</h2>
 <p>A context ID identifies a specific content item that provides context for recommendations. Use it for &quot;similar items&quot; or &quot;because you viewed X&quot; scenarios.</p>
-<p><strong>Example</strong>: User views the game &quot;Book of Dead&quot;. You request recommendations with <code>context_id=book-of-dead</code>. Opti-X returns games similar to Book of Dead.</p>
+<p><strong>Example</strong>: User views the game &quot;Book of Dead&quot;. You request recommendations with <code>context_id=book-of-dead</code>. Personalize returns games similar to Book of Dead.</p>
 <pre><code class="language-bash">GET /v3/recommend/placements/similar-games
 ?visitor_id=player_12345
 &amp;context_id=book-of-dead
@@ -910,10 +909,10 @@
 <p><strong>Why Context ID Matters</strong>: Context IDs power contextual recommendations. They answer &quot;what&#39;s similar to this?&quot; rather than &quot;what does this user like?&quot; Both are valuable in different scenarios.</p>
 <hr>
 <h2>Visitor ID vs. User ID</h2>
-<p>Opti-X tracks users with two identifiers:</p>
+<p>Personalize tracks users with two identifiers:</p>
 <p><strong>Visitor ID</strong>: An anonymous identifier for users who haven&#39;t logged in. Typically stored in a cookie or device ID. Allows personalization for anonymous browsing.</p>
 <p><strong>User ID</strong>: A known identifier for logged-in users. Links activity across devices and sessions. Provides richer personalization.</p>
-<p><strong>Best practice</strong>: Send both when available. Opti-X links visitor and user IDs when a user logs in, combining anonymous and authenticated behavior.</p>
+<p><strong>Best practice</strong>: Send both when available. Personalize links visitor and user IDs when a user logs in, combining anonymous and authenticated behavior.</p>
 <pre><code class="language-bash">GET /v3/recommend/placements/homepage-carousel
 ?visitor_id=anon_abc123
 &amp;user_id=player_12345
@@ -922,7 +921,7 @@
 <hr>
 <h2>Recommendation ID (recId)</h2>
 <p>Every recommendation response includes a <code>rec_id</code> for each item. This unique identifier tracks which recommendations users saw and clicked.</p>
-<p><strong>Why recId Matters</strong>: Send the <code>rec_id</code> back when users click recommendations. This closes the feedback loop—Opti-X learns which recommendations drive engagement.</p>
+<p><strong>Why recId Matters</strong>: Send the <code>rec_id</code> back when users click recommendations. This closes the feedback loop—Personalize learns which recommendations drive engagement.</p>
 <p><strong>Example click tracking</strong>:</p>
 <pre><code class="language-json">{
   &quot;event_type&quot;: &quot;recommendation_click&quot;,
@@ -964,7 +963,7 @@
 <td>Include age-restricted content</td>
 </tr>
 </tbody></table>
-<p><strong>Why Traits Matter</strong>: Traits add dimensions to personalization beyond behavior. A user might not have played high-volatility slots recently, but if their trait indicates they&#39;re a high-roller, Opti-X can factor that in.</p>
+<p><strong>Why Traits Matter</strong>: Traits add dimensions to personalization beyond behavior. A user might not have played high-volatility slots recently, but if their trait indicates they&#39;re a high-roller, Personalize can factor that in.</p>
 <hr>
 <h2>Skin ID</h2>
 <p>A skin ID identifies a brand variant within a multi-brand platform. If you operate multiple casino or betting brands from the same backend, skin IDs separate their inventories and configurations.</p>
@@ -979,7 +978,7 @@
 <h2>Regulation</h2>
 <p>Regulation refers to compliance rules that restrict what content can be shown to users based on their jurisdiction.</p>
 <p><strong>Example</strong>: A user in Germany (<code>regulation=de</code>) should only see games licensed for the German market. UK users (<code>regulation=uk</code>) should only see UK-licensed games.</p>
-<p><strong>Why Regulation Matters</strong>: Gaming and betting are heavily regulated. Recommendations must respect licensing restrictions. Opti-X filters recommendations based on regulation parameters to ensure compliance.</p>
+<p><strong>Why Regulation Matters</strong>: Gaming and betting are heavily regulated. Recommendations must respect licensing restrictions. Personalize filters recommendations based on regulation parameters to ensure compliance.</p>
 <hr>
 <h2>Summary: How It All Fits Together</h2>
 <ol>
@@ -1005,17 +1004,17 @@
 </section>
 <section id="glossary" class="doc-section">
 <h1>Glossary</h1>
-<p>This glossary defines terms used throughout the Opti-X documentation. Terms are organized alphabetically for quick reference.</p>
+<p>This glossary defines terms used throughout the Personalize documentation. Terms are organized alphabetically for quick reference.</p>
 <hr>
 <h2>A</h2>
 <h3>Activity</h3>
-<p>User events sent to Opti-X that describe behavior on your platform. Examples include game launches, bet placements, product views, and purchases. Activity data powers personalization by teaching Opti-X about user preferences.</p>
+<p>User events sent to Personalize that describe behavior on your platform. Examples include game launches, bet placements, product views, and purchases. Activity data powers personalization by teaching Personalize about user preferences.</p>
 <h3>Activity API</h3>
-<p>The API endpoint for sending user events to Opti-X. Activity events are sent as POST requests with event details in the request body.</p>
+<p>The API endpoint for sending user events to Personalize. Activity events are sent as POST requests with event details in the request body.</p>
 <h3>API Key</h3>
-<p>A credential used to authenticate requests to Opti-X APIs. You receive API keys from the Admin Panel under Developer Tools &gt; API Keys. See also: x-api-key, x-brand-key.</p>
+<p>A credential used to authenticate requests to Personalize APIs. You receive API keys from the Admin Panel under Developer Tools &gt; API Keys. See also: x-api-key, x-brand-key.</p>
 <h3>Autocomplete</h3>
-<p>A search feature that suggests completions as users type. Opti-X Autocomplete provides personalized suggestions based on user behavior and popular searches.</p>
+<p>A search feature that suggests completions as users type. Personalize Autocomplete provides personalized suggestions based on user behavior and popular searches.</p>
 <hr>
 <h2>B</h2>
 <h3>Bettable Content</h3>
@@ -1031,11 +1030,11 @@
 <h3>Class</h3>
 <p>In sports betting, a classification level below Category. For example, within the &quot;Football&quot; category, classes might include &quot;Premier League,&quot; &quot;La Liga,&quot; or &quot;Champions League.&quot;</p>
 <h3>Cold Start</h3>
-<p>The challenge of personalizing for users with little or no activity history. Opti-X addresses cold start with popularity-based methods and trait-based personalization.</p>
+<p>The challenge of personalizing for users with little or no activity history. Personalize addresses cold start with popularity-based methods and trait-based personalization.</p>
 <h3>Competition</h3>
 <p>In sports betting, a specific league, tournament, or cup. Examples: Premier League, NBA Finals, World Cup.</p>
 <h3>Consume / Consumption</h3>
-<p>The act of requesting personalized content from Opti-X. &quot;Consuming&quot; recommendations means calling the API to get personalized results for display.</p>
+<p>The act of requesting personalized content from Personalize. &quot;Consuming&quot; recommendations means calling the API to get personalized results for display.</p>
 <h3>Context ID</h3>
 <p>An identifier for a specific content item that provides context for recommendations. Used for &quot;similar items&quot; recommendations. If a user views Game A, passing <code>context_id=game-a</code> returns games similar to Game A.</p>
 <hr>
@@ -1055,7 +1054,7 @@
 <h3>Fallback</h3>
 <p>The backup strategy when personalized recommendations aren&#39;t available. Typically shows popular items when user-specific data is insufficient.</p>
 <h3>Feed</h3>
-<p>A data file (usually JSON or CSV) containing inventory items or activity events. Feeds are used for bulk data synchronization with Opti-X.</p>
+<p>A data file (usually JSON or CSV) containing inventory items or activity events. Feeds are used for bulk data synchronization with Personalize.</p>
 <hr>
 <h2>G</h2>
 <h3>Game ID</h3>
@@ -1081,7 +1080,7 @@
 <hr>
 <h2>K</h2>
 <h3>Key Concepts</h3>
-<p>The foundational ideas in Opti-X: Activity, Bettable Content (Inventory), and Consume (the ABC framework).</p>
+<p>The foundational ideas in Personalize: Activity, Bettable Content (Inventory), and Consume (the ABC framework).</p>
 <hr>
 <h2>L</h2>
 <h3>Live Betting</h3>
@@ -1104,8 +1103,8 @@
 <h2>O</h2>
 <h3>Odds</h3>
 <p>In sports betting, the probability and potential payout for a selection. Odds affect which bets users find attractive and can influence recommendations.</p>
-<h3>Opti-X Admin Panel</h3>
-<p>The web interface for configuring Opti-X. Access placements, methods, analytics, and API keys through the Admin Panel.</p>
+<h3>Personalize Admin Panel</h3>
+<p>The web interface for configuring Personalize. Access placements, methods, analytics, and API keys through the Admin Panel.</p>
 <hr>
 <h2>P</h2>
 <h3>Personalization</h3>
@@ -1121,7 +1120,7 @@
 <hr>
 <h2>Q</h2>
 <h3>Query</h3>
-<p>In Smart Search, the text a user enters to search for content. Opti-X personalizes search results based on the query and user behavior.</p>
+<p>In Smart Search, the text a user enters to search for content. Personalize personalizes search results based on the query and user behavior.</p>
 <hr>
 <h2>R</h2>
 <h3>Ranking</h3>
@@ -1129,11 +1128,11 @@
 <h3>recId (Recommendation ID)</h3>
 <p>A unique identifier assigned to each recommended item in a response. Send recId back with click events to track recommendation performance.</p>
 <h3>Recommendation</h3>
-<p>A suggested content item generated by Opti-X for a specific user. Recommendations are ranked by predicted relevance.</p>
+<p>A suggested content item generated by Personalize for a specific user. Recommendations are ranked by predicted relevance.</p>
 <h3>Regulation</h3>
 <p>Compliance rules that restrict content availability based on user jurisdiction. Different regulations (UK, DE, MT) may have different content requirements.</p>
 <h3>Response</h3>
-<p>The data returned by an Opti-X API call. Recommendation responses include ranked items with IDs, positions, and recIds.</p>
+<p>The data returned by an Personalize API call. Recommendation responses include ranked items with IDs, positions, and recIds.</p>
 <h3>RTP (Return to Player)</h3>
 <p>A percentage indicating the expected payout of a game over time. An RTP of 96% means the game returns $96 for every $100 wagered on average. RTP is a common attribute for gaming inventory.</p>
 <hr>
@@ -1151,7 +1150,7 @@
 <h3>Slot</h3>
 <p>A casino game category featuring spinning reels and symbol combinations. Slots are the most common game type in online casinos.</p>
 <h3>Smart Search</h3>
-<p>Opti-X&#39;s AI-powered search feature that personalizes results based on user behavior and intent understanding.</p>
+<p>Personalize&#39;s AI-powered search feature that personalizes results based on user behavior and intent understanding.</p>
 <h3>Sport</h3>
 <p>The top-level category in sports betting. Examples: Football, Basketball, Tennis, Horse Racing.</p>
 <hr>
@@ -1167,7 +1166,7 @@
 <h3>Traits</h3>
 <p>User attributes that enhance personalization beyond behavior. Examples: VIP tier, preferred language, risk profile.</p>
 <h3>Trending Method</h3>
-<p>A recommendation method that ranks items by recent popularity momentum. Highlights content gaining traction.</p>
+<p>A recommendation method available through the Recommend API that ranks items by recent engagement growth rate. Highlights content gaining traction. See the <a href="#recommend-api">Recommend API</a> for implementation details.</p>
 <h3>Type</h3>
 <p>A classification level for inventory items. In sports betting, type sits between class and event. Example: Within &quot;Premier League&quot; class, types might be &quot;Matchday 20&quot; or &quot;FA Cup Round 4.&quot;</p>
 <hr>
@@ -1177,7 +1176,7 @@
 <hr>
 <h2>V</h2>
 <h3>Vertical</h3>
-<p>An industry category supported by Opti-X. Verticals include Gaming (iGaming), Sports Betting, and E-commerce.</p>
+<p>An industry category supported by Personalize. Verticals include Gaming (iGaming), Sports Betting, and E-commerce.</p>
 <h3>Visitor ID</h3>
 <p>An anonymous identifier for users who haven&#39;t logged in. Typically a cookie or device ID. Enables personalization for anonymous users.</p>
 <h3>Volatility</h3>
@@ -1189,14 +1188,14 @@
 <hr>
 <h2>X</h2>
 <h3>x-api-key</h3>
-<p>An HTTP header containing your Opti-X API key. Required for all API requests. Obtained from Admin Panel &gt; Developer Tools &gt; API Keys.</p>
+<p>An HTTP header containing your Personalize API key. Required for all API requests. Obtained from Admin Panel &gt; Developer Tools &gt; API Keys.</p>
 <h3>x-brand-key</h3>
-<p>An HTTP header identifying your brand within Opti-X. Required for multi-brand setups. Works alongside x-api-key for authentication.</p>
+<p>An HTTP header identifying your brand within Personalize. Required for multi-brand setups. Works alongside x-api-key for authentication.</p>
 <hr>
 <h2>Related Topics</h2>
 <ul>
 <li><a href="#key-concepts">Key Concepts</a> - Understand core concepts in depth</li>
-<li><a href="#what-is-optix">What is Opti-X?</a> - Product overview</li>
+<li><a href="#what-is-optix">What is Personalize?</a> - Product overview</li>
 <li><a href="#prerequisites">Prerequisites</a> - Get your API keys</li>
 <li><a href="#first-api-call">First API Call</a> - Start using these concepts</li>
 </ul>
@@ -1204,23 +1203,23 @@
 </section>
 <section id="prerequisites" class="doc-section">
 <h1>Prerequisites</h1>
-<p>Before making your first Opti-X API call, complete this checklist. Setup takes about 15 minutes if you have admin access to your Opti-X account.</p>
+<p>Before making your first Personalize API call, complete this checklist. Setup takes about 15 minutes if you have admin access to your Personalize account.</p>
 <hr>
 <h2>Checklist</h2>
 <ul>
-<li><input disabled="" type="checkbox"> Opti-X account access</li>
+<li><input disabled="" type="checkbox"> Personalize account access</li>
 <li><input disabled="" type="checkbox"> Admin Panel login credentials</li>
 <li><input disabled="" type="checkbox"> API keys obtained (x-api-key and x-brand-key)</li>
 <li><input disabled="" type="checkbox"> Test environment identified</li>
 <li><input disabled="" type="checkbox"> At least one placement configured</li>
 </ul>
 <hr>
-<h2>Step 1: Opti-X Account Access</h2>
-<p>Your organization needs an active Opti-X subscription. If you&#39;re unsure about your account status, contact your Optimove Customer Success Manager.</p>
-<p><strong>Verify access</strong>: Navigate to <a href="https://admin.opti-x.optimove.net">admin.opti-x.optimove.net</a> and confirm you can log in.</p>
+<h2>Step 1: Personalize Account Access</h2>
+<p>Your organization needs an active Personalize subscription. If you&#39;re unsure about your account status, contact your Optimove Customer Success Manager.</p>
+<p><strong>Verify access</strong>: Navigate to your Personalize Admin Panel and confirm you can log in.</p>
 <hr>
 <h2>Step 2: Get Your API Keys</h2>
-<p>Opti-X uses two headers for authentication:</p>
+<p>Personalize uses two headers for authentication:</p>
 <table>
 <thead>
 <tr>
@@ -1242,13 +1241,13 @@
 </tbody></table>
 <h3>Finding Your Keys</h3>
 <ol>
-<li>Log in to the <a href="https://admin.opti-x.optimove.net">Opti-X Admin Panel</a></li>
+<li>Log in to the your Personalize Admin Panel</li>
 <li>Navigate to <strong>Developer Tools</strong> in the left sidebar</li>
 <li>Click <strong>API Keys</strong></li>
 <li>Copy your keys for use in API calls</li>
 </ol>
 <h3>Key Types</h3>
-<p>Opti-X provides different key types for different use cases:</p>
+<p>Personalize provides different key types for different use cases:</p>
 <table>
 <thead>
 <tr>
@@ -1297,7 +1296,7 @@ const brandKey = process.env.OPTIX_BRAND_KEY;
 </code></pre>
 <hr>
 <h2>Step 3: Identify Your Environment</h2>
-<p>Opti-X provides separate environments for development and production:</p>
+<p>Personalize provides separate environments for development and production:</p>
 <table>
 <thead>
 <tr>
@@ -1344,7 +1343,7 @@ const brandKey = process.env.OPTIX_BRAND_KEY;
 <p>You can refine placement settings later. For now, a basic configuration is sufficient to test API calls.</p>
 <hr>
 <h2>Step 5: Understand Your Inventory</h2>
-<p>Opti-X recommends items from your inventory. Before integration, confirm:</p>
+<p>Personalize recommends items from your inventory. Before integration, confirm:</p>
 <ul>
 <li><strong>Inventory is loaded</strong>: Check Admin Panel &gt; Inventory to see your items</li>
 <li><strong>Items have attributes</strong>: Games should have provider, RTP, category; products should have category, price, brand</li>
@@ -1422,7 +1421,7 @@ Placement:    homepage-carousel (or your test placement)
 <hr>
 <h2>Related Topics</h2>
 <ul>
-<li><a href="#what-is-optix">What is Opti-X?</a> - Product overview</li>
+<li><a href="#what-is-optix">What is Personalize?</a> - Product overview</li>
 <li><a href="#key-concepts">Key Concepts</a> - Understand the ABC framework</li>
 <li><a href="#glossary">Glossary</a> - Term definitions</li>
 </ul>
@@ -1430,12 +1429,12 @@ Placement:    homepage-carousel (or your test placement)
 </section>
 <section id="first-api-call" class="doc-section">
 <h1>Your First API Call</h1>
-<p>This guide walks you through making your first Opti-X recommendation request. By the end, you&#39;ll have working code that fetches personalized recommendations.</p>
+<p>This guide walks you through making your first Personalize recommendation request. By the end, you&#39;ll have working code that fetches personalized recommendations.</p>
 <p><strong>Time required</strong>: 15 minutes
 <strong>Prerequisites</strong>: <a href="#prerequisites">Setup checklist completed</a></p>
 <hr>
 <h2>Goal</h2>
-<p>Request personalized recommendations from Opti-X and understand the response. We&#39;ll use a simple curl command, then show implementations in JavaScript and Python.</p>
+<p>Request personalized recommendations from Personalize and understand the response. We&#39;ll use a simple curl command, then show implementations in JavaScript and Python.</p>
 <hr>
 <h2>Step 1: Prepare Your Request</h2>
 <p>Gather these values from your setup:</p>
@@ -1494,7 +1493,7 @@ Placement:    homepage-carousel (or your test placement)
 <tr>
 <td>Base URL</td>
 <td><code>https://api.opti-x.optimove.net</code></td>
-<td>Opti-X API server</td>
+<td>Personalize API server</td>
 </tr>
 <tr>
 <td>Path</td>
@@ -1705,7 +1704,7 @@ for item in recommendations[&#39;items&#39;]:
 </code></pre>
 <hr>
 <h2>Step 5: Track Clicks (Important!)</h2>
-<p>When a user clicks a recommendation, send the <code>rec_id</code> back to Opti-X. This feedback improves future recommendations.</p>
+<p>When a user clicks a recommendation, send the <code>rec_id</code> back to Personalize. This feedback improves future recommendations.</p>
 <pre><code class="language-javascript">async function trackRecommendationClick(userId, recId, itemId) {
   const baseUrl = &#39;https://api.opti-x.optimove.net&#39;;
 
@@ -1895,7 +1894,7 @@ Content-Type: application/json
 </section>
 <section id="inventory-overview" class="doc-section">
 <h1>Inventory Overview</h1>
-<p>Inventory is the foundation of personalized recommendations in Opti-X. Your inventory defines what items, games, events, or products you can recommend to users.</p>
+<p>Inventory is the foundation of personalized recommendations in Personalize. Your inventory defines what items, games, events, or products you can recommend to users.</p>
 <h2>What is Inventory?</h2>
 <p>Inventory represents your catalog of recommendable items. It includes:</p>
 <ul>
@@ -1903,9 +1902,9 @@ Content-Type: application/json
 <li><strong>Availability rules</strong> - Which users can see which items based on location, currency, or other traits</li>
 <li><strong>Display settings</strong> - Images, URLs, and presentation data for rendering recommendations</li>
 </ul>
-<p>Without inventory data, Opti-X cannot generate recommendations. The quality and completeness of your inventory directly impacts recommendation relevance.</p>
+<p>Without inventory data, Personalize cannot generate recommendations. The quality and completeness of your inventory directly impacts recommendation relevance.</p>
 <h2>Why Inventory Matters for Personalization</h2>
-<p>Opti-X uses inventory data to:</p>
+<p>Personalize uses inventory data to:</p>
 <ol>
 <li><strong>Match users to relevant items</strong> - Algorithms analyze item attributes and user behavior to find the best matches</li>
 <li><strong>Filter by eligibility</strong> - Availability rules ensure users only see items they can access</li>
@@ -1913,7 +1912,7 @@ Content-Type: application/json
 <li><strong>Train models</strong> - Rich item attributes improve machine learning model accuracy over time</li>
 </ol>
 <h2>Inventory Types</h2>
-<p>Opti-X supports three inventory types, each designed for specific use cases:</p>
+<p>Personalize supports three inventory types, each designed for specific use cases:</p>
 <h3>Gaming Inventory</h3>
 <p>For online casinos, game aggregators, and gaming platforms.</p>
 <ul>
@@ -1948,9 +1947,9 @@ Content-Type: application/json
 </code></pre>
 <ol>
 <li><strong>You send inventory</strong> - Upload your catalog via API or batch file</li>
-<li><strong>Opti-X processes it</strong> - Items are indexed, validated, and made available for recommendations</li>
+<li><strong>Personalize processes it</strong> - Items are indexed, validated, and made available for recommendations</li>
 <li><strong>Users request recommendations</strong> - Your application calls the Recommendation API with user context</li>
-<li><strong>Opti-X returns personalized items</strong> - Algorithms select and rank the best items for that user</li>
+<li><strong>Personalize returns personalized items</strong> - Algorithms select and rank the best items for that user</li>
 </ol>
 <h2>Data Freshness Requirements</h2>
 <p>Keep your inventory synchronized with your source systems:</p>
@@ -1978,12 +1977,12 @@ Content-Type: application/json
 <td>Stock levels and pricing affect user experience</td>
 </tr>
 </tbody></table>
-<p><strong>Stale inventory leads to poor experiences.</strong> If Opti-X recommends an out-of-stock product or a game that is no longer available, users lose trust in your recommendations.</p>
+<p><strong>Stale inventory leads to poor experiences.</strong> If Personalize recommends an out-of-stock product or a game that is no longer available, users lose trust in your recommendations.</p>
 <h2>Getting Started</h2>
 <p>Choose the inventory type that matches your business:</p>
 <ol>
 <li>Review the field requirements for your inventory type</li>
-<li>Map your existing data to the Opti-X schema</li>
+<li>Map your existing data to the Personalize schema</li>
 <li>Implement the appropriate API integration</li>
 <li>Set up automated updates to keep data fresh</li>
 </ol>
@@ -2000,11 +1999,11 @@ Content-Type: application/json
 </section>
 <section id="gaming-inventory" class="doc-section">
 <h1>Gaming Inventory</h1>
-<p>This document details the data formats for preparing your Gaming Inventory for Opti-X.</p>
+<p>This document details the data formats for preparing your Gaming Inventory for Personalize.</p>
 <h2>Overview</h2>
-<p>Gaming Inventory provides a daily snapshot of available games and their associated metadata. Opti-X uses this data to power personalized game recommendations across your platform.</p>
+<p>Gaming Inventory provides a daily snapshot of available games and their associated metadata. Personalize uses this data to power personalized game recommendations across your platform.</p>
 <h3>Why This Matters</h3>
-<p>Your gaming inventory is the foundation of game recommendations. Complete and accurate inventory data enables Opti-X to:</p>
+<p>Your gaming inventory is the foundation of game recommendations. Complete and accurate inventory data enables Personalize to:</p>
 <ul>
 <li>Match players with games they are likely to enjoy</li>
 <li>Filter games by platform, regulation, and player eligibility</li>
@@ -2043,7 +2042,7 @@ Content-Type: application/json
 }
 </code></pre>
 <h2>Sending Inventory Data</h2>
-<p>Exchange inventory data with Opti-X through the Gaming Inventory API.</p>
+<p>Exchange inventory data with Personalize through the Gaming Inventory API.</p>
 <blockquote>
 <p><strong>Smart Content Requirement</strong></p>
 <p>If you plan to use Smart Content, include a full, absolute (HTTPS) <code>image_url</code> for each game in your Gaming Inventory. Without <code>image_url</code>, Smart Content placements cannot render the game&#39;s image and may show blank or fallback content.</p>
@@ -2051,7 +2050,7 @@ Content-Type: application/json
 <h2>Field Reference</h2>
 <h3>Understanding the Columns</h3>
 <ul>
-<li><p><strong>Automatic Tag Creation</strong>: When marked with a checkmark, Opti-X automatically creates searchable tags from this field&#39;s values. Tags enable filtering and grouping in recommendations. For example, if you set <code>game_category</code> to &quot;Slots&quot;, Opti-X creates a &quot;Slots&quot; tag that you can use to filter recommendations.</p>
+<li><p><strong>Automatic Tag Creation</strong>: When marked with a checkmark, Personalize automatically creates searchable tags from this field&#39;s values. Tags enable filtering and grouping in recommendations. For example, if you set <code>game_category</code> to &quot;Slots&quot;, Personalize creates a &quot;Slots&quot; tag that you can use to filter recommendations.</p>
 </li>
 <li><p><strong>Availability Filters</strong>: When marked with a checkmark, this field can be used to control which users see this game based on their attributes (location, currency, skin). See <a href="#availability-filters">Availability Filters</a> for details.</p>
 </li>
@@ -2314,7 +2313,7 @@ Content-Type: application/json
 </tbody></table>
 <h3>Why Each Section Matters</h3>
 <p><strong>Identification Fields</strong> (<code>game_code</code>, <code>game_name</code>)
-These fields identify and display the game. Without a unique <code>game_code</code>, Opti-X cannot track the game or its performance.</p>
+These fields identify and display the game. Without a unique <code>game_code</code>, Personalize cannot track the game or its performance.</p>
 <p><strong>Platform Fields</strong> (<code>desktop</code>, <code>mobile</code>, <code>tablet</code>, <code>extra_channels</code>)
 Platform data ensures users only see games compatible with their device. Recommending a desktop-only game to a mobile user creates a poor experience.</p>
 <p><strong>Categorization Fields</strong> (<code>game_category</code>, <code>game_class</code>, <code>game_type</code>, <code>themes</code>)
@@ -2339,7 +2338,7 @@ These fields control which users can see each game based on their attributes. Pr
 </section>
 <section id="sports-inventory" class="doc-section">
 <h1>Sports Inventory</h1>
-<p>Opti-X uses sports inventory data to provide personalized betting recommendations to your users. The Sports Inventory API ensures Opti-X always has the most up-to-date information for your sportsbook.</p>
+<p>Personalize uses sports inventory data to provide personalized betting recommendations to your users. The Sports Inventory API ensures Personalize always has the most up-to-date information for your sportsbook.</p>
 <h2>Overview</h2>
 <p>Sports inventory follows a hierarchical structure that mirrors how sportsbooks organize betting options. Understanding this hierarchy is essential for successful integration.</p>
 <h3>Why This Matters</h3>
@@ -2387,7 +2386,7 @@ These fields control which users can see each game based on their attributes. Pr
 <p><strong>Why it matters:</strong> Selections are what users actually bet on. Each selection has odds that determine the potential payout.</p>
 <h2>Getting Started</h2>
 <h3>Prerequisites</h3>
-<p>You need API credentials from the Opti-X Developer Tools at <code>opti-x.optimove.net</code>:</p>
+<p>You need API credentials from the Personalize Developer Tools at <code>opti-x.optimove.net</code>:</p>
 <ul>
 <li><code>x-brand-key</code> - Identifies your brand</li>
 <li><code>x-api-key</code> - Authenticates API requests</li>
@@ -3114,11 +3113,11 @@ These fields control which users can see each game based on their attributes. Pr
 </section>
 <section id="ecommerce-inventory" class="doc-section">
 <h1>E-commerce Inventory</h1>
-<p>This document details the data formats for preparing your e-commerce product catalog for Opti-X.</p>
+<p>This document details the data formats for preparing your e-commerce product catalog for Personalize.</p>
 <h2>Overview</h2>
-<p>E-commerce inventory provides Opti-X with your product catalog data. Opti-X uses this data to generate personalized product recommendations across your website, app, and marketing channels.</p>
+<p>E-commerce inventory provides Personalize with your product catalog data. Personalize uses this data to generate personalized product recommendations across your website, app, and marketing channels.</p>
 <h3>Why This Matters</h3>
-<p>Your product inventory is the foundation of all recommendations. Complete and accurate inventory data enables Opti-X to:</p>
+<p>Your product inventory is the foundation of all recommendations. Complete and accurate inventory data enables Personalize to:</p>
 <ul>
 <li>Match shoppers with products they are likely to purchase</li>
 <li>Filter products by availability, price, and category</li>
@@ -3126,7 +3125,7 @@ These fields control which users can see each game based on their attributes. Pr
 <li>Power use cases like &quot;new arrivals,&quot; &quot;back in stock,&quot; and &quot;price drops&quot;</li>
 </ul>
 <blockquote>
-<p><strong>Important:</strong> Inventory field names must map to your real-time event field names. Consistent naming ensures Opti-X can connect user behavior to the correct products.</p>
+<p><strong>Important:</strong> Inventory field names must map to your real-time event field names. Consistent naming ensures Personalize can connect user behavior to the correct products.</p>
 </blockquote>
 <h2>Product Hierarchy</h2>
 <p>E-commerce inventory supports three levels of product granularity:</p>
@@ -3209,7 +3208,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3249,7 +3248,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3290,7 +3289,7 @@ These fields control which users can see each game based on their attributes. Pr
 <td>String</td>
 <td><code>https://www.example.com/products/afjoi239</code></td>
 <td>Product page URL</td>
-<td>Returned in recommendations. Required for Smart Banners.</td>
+<td>Returned in recommendations. Required for Smart Content.</td>
 </tr>
 <tr>
 <td>PRODUCT_IMAGE</td>
@@ -3298,7 +3297,7 @@ These fields control which users can see each game based on their attributes. Pr
 <td>String</td>
 <td><code>https://www.example.com/images/product.jpg</code></td>
 <td>Product image URL</td>
-<td>Returned in recommendations. Required for Smart Banners.</td>
+<td>Returned in recommendations. Required for Smart Content.</td>
 </tr>
 <tr>
 <td>VIDEO_URL</td>
@@ -3321,7 +3320,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3385,7 +3384,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3439,7 +3438,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3503,7 +3502,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3532,7 +3531,7 @@ These fields control which users can see each game based on their attributes. Pr
 </tr>
 </tbody></table>
 <h4>Why This Matters</h4>
-<p><code>RELEASE_DATE</code> enables &quot;new arrivals&quot; recommendations. Without this field, Opti-X cannot identify which products are new.</p>
+<p><code>RELEASE_DATE</code> enables &quot;new arrivals&quot; recommendations. Without this field, Personalize cannot identify which products are new.</p>
 <h3>Custom Data</h3>
 <p>Use <code>RAW_DATA</code> to include additional attributes not covered by standard fields.</p>
 <table>
@@ -3543,7 +3542,7 @@ These fields control which users can see each game based on their attributes. Pr
 <th>Type</th>
 <th>Example</th>
 <th>Description</th>
-<th>Opti-X Impact</th>
+<th>Personalize Impact</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -3612,7 +3611,7 @@ These fields control which users can see each game based on their attributes. Pr
 <ol>
 <li><strong>Keep inventory current</strong> - Update at least daily, preferably more often for stock and price changes</li>
 <li><strong>Use consistent IDs</strong> - Product IDs in inventory must match IDs in your real-time events</li>
-<li><strong>Include images</strong> - <code>PRODUCT_IMAGE</code> is essential for Smart Banners and visual recommendations</li>
+<li><strong>Include images</strong> - <code>PRODUCT_IMAGE</code> is essential for Smart Content and visual recommendations</li>
 <li><strong>Set availability correctly</strong> - Use <code>ISAVAILABLE: false</code> for items that should not be recommended</li>
 <li><strong>Complete category paths</strong> - Full <code>CATEGORY_LIST</code> paths enable powerful filtering rules</li>
 </ol>
@@ -3626,9 +3625,9 @@ These fields control which users can see each game based on their attributes. Pr
 </section>
 <section id="lottery-bingo" class="doc-section">
 <h1>Lottery and Bingo Inventory</h1>
-<p>Lottery and Bingo products use the Gaming Inventory structure within Opti-X. This guide explains how to configure your lottery draws and bingo games for optimal personalization.</p>
+<p>Lottery and Bingo products use the Gaming Inventory structure within Personalize. This guide explains how to configure your lottery draws and bingo games for optimal personalization.</p>
 <h2>Overview</h2>
-<p>Lottery and Bingo are categorized as Gaming within Opti-X. Rather than a separate inventory type, you use the standard Gaming Inventory schema with specific field mappings for lottery draws and bingo games.</p>
+<p>Lottery and Bingo are categorized as Gaming within Personalize. Rather than a separate inventory type, you use the standard Gaming Inventory schema with specific field mappings for lottery draws and bingo games.</p>
 <h3>Why This Matters</h3>
 <p>Using the Gaming Inventory structure for lottery and bingo provides:</p>
 <ul>
@@ -3759,7 +3758,7 @@ These fields control which users can see each game based on their attributes. Pr
 }
 </code></pre>
 <h3>Why This Matters</h3>
-<p>Draw times enable Opti-X to:</p>
+<p>Draw times enable Personalize to:</p>
 <ul>
 <li>Show only upcoming draws (not past ones)</li>
 <li>Prioritize draws closing soon for urgency messaging</li>
@@ -3825,7 +3824,7 @@ These fields control which users can see each game based on their attributes. Pr
 <li><strong>License</strong> - Regulatory jurisdiction (e.g., <code>UKGC</code>, <code>MGA</code>)</li>
 <li><strong>Age Verified</strong> - Whether the user has completed age verification</li>
 </ul>
-<p>Opti-X matches these traits against inventory availability rules to filter recommendations.</p>
+<p>Personalize matches these traits against inventory availability rules to filter recommendations.</p>
 <h3>Why This Matters</h3>
 <p>Availability filters solve critical business problems:</p>
 <ol>
@@ -4159,9 +4158,9 @@ These fields control which users can see each game based on their attributes. Pr
 </section>
 <section id="api-reference-overview" class="doc-section">
 <h1>API Overview</h1>
-<p>Opti-X provides a suite of APIs that enable you to deliver personalized experiences across your digital properties. Whether you need product recommendations, intelligent page layouts, AI-powered search, or inventory management, these APIs give you programmatic access to Opti-X&#39;s personalization engine.</p>
+<p>Personalize provides a suite of APIs that enable you to deliver personalized experiences across your digital properties. Whether you need product recommendations, intelligent page layouts, AI-powered search, or inventory management, these APIs give you programmatic access to Personalize&#39;s personalization engine.</p>
 <h2>Why This Matters</h2>
-<p>Integrating directly with Opti-X APIs gives you complete control over how and where personalization appears in your application. You can embed recommendations in any page, power search experiences, and manage your content inventory programmatically.</p>
+<p>Integrating directly with Personalize APIs gives you complete control over how and where personalization appears in your application. You can embed recommendations in any page, power search experiences, and manage your content inventory programmatically.</p>
 <h2>Available APIs</h2>
 <h3>Recommend API</h3>
 <p>Delivers personalized item recommendations for configured placements in your application.</p>
@@ -4191,17 +4190,8 @@ These fields control which users can see each game based on their attributes. Pr
 <li>Personalized search results based on user history</li>
 </ul>
 <p><a href="#smart-search-api">View Smart Search API Documentation</a></p>
-<h3>Momentum API</h3>
-<p>Provides access to Popular and Trending data through the Recommend API infrastructure.</p>
-<p><strong>Use cases:</strong></p>
-<ul>
-<li>&quot;Most Popular&quot; sections</li>
-<li>&quot;Trending Now&quot; widgets</li>
-<li>Real-time popularity rankings</li>
-</ul>
-<p><a href="#momentum-api">View Momentum API Documentation</a></p>
 <h3>Gaming Inventory API</h3>
-<p>Enables uploading and managing your gaming inventory data within Opti-X.</p>
+<p>Enables uploading and managing your gaming inventory data within Personalize.</p>
 <p><strong>Use cases:</strong></p>
 <ul>
 <li>Syncing game catalogs</li>
@@ -4210,7 +4200,7 @@ These fields control which users can see each game based on their attributes. Pr
 </ul>
 <p><a href="#gaming-inventory-api">View Gaming Inventory API Documentation</a></p>
 <h2>Authentication Summary</h2>
-<p>All Opti-X APIs use header-based authentication with two required keys:</p>
+<p>All Personalize APIs use header-based authentication with two required keys:</p>
 <table>
 <thead>
 <tr>
@@ -4224,10 +4214,10 @@ These fields control which users can see each game based on their attributes. Pr
 </tr>
 <tr>
 <td><code>x-brand-key</code></td>
-<td>Identifies your brand within Opti-X</td>
+<td>Identifies your brand within Personalize</td>
 </tr>
 </tbody></table>
-<p>Find your keys in the Opti-X Admin panel under <strong>Developer Tools &gt; API Keys</strong>.</p>
+<p>Find your keys in the Personalize Admin panel under <strong>Developer Tools &gt; API Keys</strong>.</p>
 <p><a href="#authentication">View Full Authentication Guide</a></p>
 <h2>Base URL</h2>
 <p>All API requests should be made to:</p>
@@ -4241,7 +4231,7 @@ These fields control which users can see each game based on their attributes. Pr
 <li>For recommendations, explanations of why items were selected</li>
 </ul>
 <h2>Error Handling</h2>
-<p>Opti-X APIs use standard HTTP status codes. Common responses include:</p>
+<p>Personalize APIs use standard HTTP status codes. Common responses include:</p>
 <table>
 <thead>
 <tr>
@@ -4275,7 +4265,7 @@ These fields control which users can see each game based on their attributes. Pr
 <p>APIs have rate limits to ensure system stability. See the <a href="#rate-limits">Rate Limits Guide</a> for details on limits per API and how to handle rate limiting.</p>
 <h2>Getting Started</h2>
 <ol>
-<li><strong>Obtain your API keys</strong> from the Opti-X Admin panel</li>
+<li><strong>Obtain your API keys</strong> from the Personalize Admin panel</li>
 <li><strong>Configure placements</strong> in the Admin panel for areas where you want recommendations</li>
 <li><strong>Make your first API call</strong> using the examples in each API guide</li>
 <li><strong>Implement feedback loops</strong> to improve personalization over time</li>
@@ -4291,7 +4281,7 @@ These fields control which users can see each game based on their attributes. Pr
 </section>
 <section id="authentication" class="doc-section">
 <h1>Authentication Guide</h1>
-<p>All Opti-X APIs use header-based authentication. Every request must include valid API keys to identify your application and brand.</p>
+<p>All Personalize APIs use header-based authentication. Every request must include valid API keys to identify your application and brand.</p>
 <h2>Why This Matters</h2>
 <p>Proper authentication protects your data and ensures that only authorized applications can access your personalization services. Different key types provide different access levels, allowing you to follow the principle of least privilege.</p>
 <h2>Required Headers</h2>
@@ -4311,7 +4301,7 @@ These fields control which users can see each game based on their attributes. Pr
 </tr>
 <tr>
 <td><code>x-brand-key</code></td>
-<td>Identifies your brand within Opti-X</td>
+<td>Identifies your brand within Personalize</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -4328,7 +4318,7 @@ x-brand-key: your-brand-key-here
 Content-Type: application/json
 </code></pre>
 <h2>API Key Types</h2>
-<p>Opti-X provides three types of API keys, each with different permission levels:</p>
+<p>Personalize provides three types of API keys, each with different permission levels:</p>
 <h3>Public Keys (Read-Only)</h3>
 <p><strong>Permissions:</strong> Read-only access to recommendation endpoints</p>
 <p><strong>Use for:</strong></p>
@@ -4366,7 +4356,7 @@ Content-Type: application/json
 <p><strong>Warning:</strong> Never expose Service keys in client-side code.</p>
 <h2>Finding Your Keys</h2>
 <ol>
-<li>Log in to the <strong>Opti-X Admin panel</strong></li>
+<li>Log in to the <strong>Personalize Admin panel</strong></li>
 <li>Navigate to <strong>Developer Tools</strong> in the main menu</li>
 <li>Select <strong>API Keys</strong></li>
 <li>Copy the appropriate key for your use case</li>
@@ -4423,12 +4413,12 @@ const brandKey = process.env.OPTIX_BRAND_KEY;
 <li>Failed authentication attempts</li>
 </ul>
 <h2>CORS Considerations</h2>
-<p>When calling Opti-X APIs directly from frontend code, browsers perform CORS (Cross-Origin Resource Sharing) checks.</p>
-<h3>How CORS Works with Opti-X</h3>
+<p>When calling Personalize APIs directly from frontend code, browsers perform CORS (Cross-Origin Resource Sharing) checks.</p>
+<h3>How CORS Works with Personalize</h3>
 <ol>
 <li>Your frontend JavaScript makes a request to <code>api.opti-x.optimove.net</code></li>
 <li>The browser sends a preflight OPTIONS request to check permissions</li>
-<li>Opti-X responds with appropriate CORS headers</li>
+<li>Personalize responds with appropriate CORS headers</li>
 <li>The browser allows your actual request to proceed</li>
 </ol>
 <h3>Preflight Caching</h3>
@@ -4502,7 +4492,7 @@ const brandKey = process.env.OPTIX_BRAND_KEY;
 <li>A checkout page with &quot;Frequently Bought Together&quot;</li>
 <li>A sports betting page with &quot;Bets for You&quot;</li>
 </ul>
-<p>You configure placements in the Opti-X Admin panel, defining rules like:</p>
+<p>You configure placements in the Personalize Admin panel, defining rules like:</p>
 <ul>
 <li>What type of items to recommend (games, products, bets)</li>
 <li>How many items to return</li>
@@ -4510,7 +4500,7 @@ const brandKey = process.env.OPTIX_BRAND_KEY;
 </ul>
 <p>Each placement receives a unique <code>placementKey</code> that you use when calling this API.</p>
 <h2>Why This Matters</h2>
-<p>The Recommend API is the core of Opti-X personalization. By providing context about where the user is and what they are doing, you enable the recommendation engine to deliver highly relevant suggestions that increase engagement and conversion.</p>
+<p>The Recommend API is the core of Personalize personalization. By providing context about where the user is and what they are doing, you enable the recommendation engine to deliver highly relevant suggestions that increase engagement and conversion.</p>
 <h2>Endpoint</h2>
 <pre><code>POST https://api.opti-x.optimove.net/recommend/v1/placements/{placementKey}/recommendations
 </code></pre>
@@ -5034,7 +5024,7 @@ const brandKey = process.env.OPTIX_BRAND_KEY;
 <p>A fast, accurate search experience directly impacts user engagement and conversion. Users who find what they want quickly are more likely to complete bets or play games. Smart Search reduces friction and increases the likelihood of conversion.</p>
 <h2>Inventory Integration</h2>
 <p>Smart Search requires access to your inventory data to function. For gaming, this means your game catalog. For sports, this means your events, markets, and selections feed.</p>
-<p>If you have already integrated inventory data for other Opti-X products (Recommend, Intelligent Layouts), Smart Search can use that same data source.</p>
+<p>If you have already integrated inventory data for other Personalize products (Recommend, Intelligent Layouts), Smart Search can use that same data source.</p>
 <h2>Search Endpoint</h2>
 <pre><code>POST https://api.opti-x.optimove.net/search/v1/query
 </code></pre>
@@ -5501,7 +5491,7 @@ function handleSearchInput(query) {
 <p>Use the <strong>Intelligent Layouts API</strong> when you need to:</p>
 <ul>
 <li>Populate an entire page with multiple recommendation sections</li>
-<li>Let Opti-X decide which placements to show and in what order</li>
+<li>Let Personalize decide which placements to show and in what order</li>
 <li>Implement dynamic page structures that adapt to each user</li>
 </ul>
 <p>Use the <strong>Recommend API</strong> when you need to:</p>
@@ -5539,7 +5529,7 @@ function handleSearchInput(query) {
 <p>Intelligent Layouts simplify complex personalized pages by:</p>
 <ul>
 <li>Reducing multiple API calls to one</li>
-<li>Letting Opti-X optimize the page structure per user</li>
+<li>Letting Personalize optimize the page structure per user</li>
 <li>Ensuring consistent deduplication across sections</li>
 <li>Enabling A/B testing of different page layouts</li>
 </ul>
@@ -5800,7 +5790,7 @@ function handleSearchInput(query) {
 </tr>
 <tr>
 <td><code>placement.dummy</code></td>
-<td>If <code>true</code>, this is a placeholder (no content from Opti-X)</td>
+<td>If <code>true</code>, this is a placeholder (no content from Personalize)</td>
 </tr>
 <tr>
 <td><code>placement.explanation</code></td>
@@ -5808,7 +5798,7 @@ function handleSearchInput(query) {
 </tr>
 </tbody></table>
 <h2>Dummy Placements</h2>
-<p>A placement with <code>&quot;dummy&quot;: true</code> indicates a slot in the page order without Opti-X content. Use dummy placements for:</p>
+<p>A placement with <code>&quot;dummy&quot;: true</code> indicates a slot in the page order without Personalize content. Use dummy placements for:</p>
 <ul>
 <li>External content (e.g., bingo schedules, promotional banners)</li>
 <li>Sections populated by other systems</li>
@@ -5988,231 +5978,33 @@ function handleSearchInput(query) {
 
 </section>
 <section id="momentum-api" class="doc-section">
-<h1>Momentum API</h1>
-<p>The Momentum API provides access to Popular and Trending data through the Recommend API infrastructure. This gives you a unified approach to accessing all recommendation data, including real-time popularity signals.</p>
-<h2>What is Momentum?</h2>
-<p>Momentum refers to the velocity of user interest in items over time. Opti-X tracks two key momentum signals:</p>
-<h3>Popular</h3>
-<p><strong>Popular</strong> items have the highest overall engagement volume. These are the items that the most users interact with, measured across a longer time window (typically days or weeks).</p>
-<p><strong>Example:</strong> A game that has been consistently played by thousands of users over the past week ranks high in Popular.</p>
-<p><strong>Use for:</strong></p>
-<ul>
-<li>&quot;Most Popular Games&quot; sections</li>
-<li>&quot;Top Picks&quot; carousels</li>
-<li>Default recommendations for new users</li>
-</ul>
-<h3>Trending</h3>
-<p><strong>Trending</strong> items show the fastest growth in engagement. These items may not have the highest total volume, but their engagement is increasing rapidly compared to their baseline.</p>
-<p><strong>Example:</strong> A newly released game that saw a 300% increase in plays today compared to yesterday ranks high in Trending, even if its total plays are lower than established popular games.</p>
-<p><strong>Use for:</strong></p>
-<ul>
-<li>&quot;Trending Now&quot; sections</li>
-<li>&quot;Hot This Week&quot; widgets</li>
-<li>Highlighting emerging content</li>
-</ul>
-<h2>Why This Matters</h2>
-<p>Popular and Trending data helps you:</p>
-<ul>
-<li>Surface content that resonates with your audience</li>
-<li>Highlight new or seasonal content gaining traction</li>
-<li>Provide meaningful recommendations for users without history</li>
-<li>Create dynamic, engaging page sections that change with user behavior</li>
-</ul>
-<h2>How to Access Momentum Data</h2>
-<p>Momentum data is accessed through the standard Recommend API. This unified approach means:</p>
-<ul>
-<li>One API integration for all recommendation types</li>
-<li>Consistent request and response formats</li>
-<li>Full access to sports rules and constraints</li>
-<li>Seamless switching between recommendation strategies</li>
-</ul>
-<h3>Setup Process</h3>
+<h1>Momentum API (Deprecated)</h1>
+<blockquote>
+<p><strong>Deprecation Notice:</strong> The Momentum API has been retired. Popular and Trending methods are now accessed through the standard Recommend API.</p>
+</blockquote>
+<h2>What Changed</h2>
+<p>Configure <strong>Popular</strong> or <strong>Trending</strong> as the method on your placement in your Personalize Admin Panel, then use the standard Recommend API endpoint. No separate integration is needed.</p>
+<h2>Migration</h2>
+<p>If you previously referenced this page for Popular or Trending setup:</p>
 <ol>
-<li><strong>Create a placement</strong> in the Opti-X Admin panel using the Recommend product</li>
-<li><strong>Select the method</strong> as &quot;Popular&quot; or &quot;Trending&quot; when configuring the placement</li>
-<li><strong>Configure rules</strong> such as item type, category filters, or time windows</li>
-<li><strong>Use the Recommend API</strong> with your placement key</li>
+<li>See the <a href="#recommend-api">Recommend API documentation</a> for request/response formats</li>
+<li>Configure Popular or Trending placements in your Admin Panel under <strong>Recommend &gt; Placements</strong></li>
+<li>Use the standard Recommend API endpoint with your placement key</li>
 </ol>
-<h2>Example: Fetching Popular Games</h2>
-<h3>Create the Placement</h3>
-<p>In the Opti-X Admin panel:</p>
-<ol>
-<li>Navigate to <strong>Recommend &gt; Placements</strong></li>
-<li>Create a new placement named &quot;Homepage Popular Games&quot;</li>
-<li>Set the method to <strong>Popular</strong></li>
-<li>Configure filters (e.g., product = Gaming, category = Slots)</li>
-<li>Save and note the <code>placementKey</code></li>
-</ol>
-<h3>Make the API Request</h3>
-<pre><code class="language-bash">curl -X POST &quot;https://api.opti-x.optimove.net/recommend/v1/placements/homepage-popular-games/recommendations&quot; \
-  -H &quot;x-api-key: your-api-key&quot; \
-  -H &quot;x-brand-key: your-brand-key&quot; \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#39;{
-    &quot;userId&quot;: &quot;user_12345&quot;,
-    &quot;type&quot;: &quot;recommendation&quot;,
-    &quot;context&quot;: {
-      &quot;product&quot;: &quot;Gaming&quot;,
-      &quot;category&quot;: &quot;Slots&quot;,
-      &quot;channel&quot;: &quot;Mobile&quot;
-    }
-  }&#39;
-</code></pre>
-<h3>Response</h3>
-<pre><code class="language-json">{
-  &quot;recommendation&quot;: {
-    &quot;result&quot;: [
-      {
-        &quot;game&quot;: {
-          &quot;game_code&quot;: &quot;starburst_classic&quot;,
-          &quot;name&quot;: &quot;Starburst Classic&quot;,
-          &quot;score&quot;: 0.98,
-          &quot;rank&quot;: 1
-        }
-      },
-      {
-        &quot;game&quot;: {
-          &quot;game_code&quot;: &quot;book_of_dead&quot;,
-          &quot;name&quot;: &quot;Book of Dead&quot;,
-          &quot;score&quot;: 0.95,
-          &quot;rank&quot;: 2
-        }
-      },
-      {
-        &quot;game&quot;: {
-          &quot;game_code&quot;: &quot;gonzo_quest&quot;,
-          &quot;name&quot;: &quot;Gonzo&#39;s Quest&quot;,
-          &quot;score&quot;: 0.92,
-          &quot;rank&quot;: 3
-        }
-      }
-    ],
-    &quot;recId&quot;: &quot;rec-popular-a1b2c3d4&quot;,
-    &quot;recDateTime&quot;: &quot;2025-01-15T14:30:00Z&quot;,
-    &quot;explanation&quot;: {
-      &quot;reason&quot;: &quot;most_popular&quot;,
-      &quot;tag_type&quot;: &quot;portlet&quot;,
-      &quot;tag&quot;: &quot;Most Popular&quot;
-    }
-  }
-}
-</code></pre>
-<h2>Example: Fetching Trending Sports Bets</h2>
-<h3>Create the Placement</h3>
-<p>In the Opti-X Admin panel:</p>
-<ol>
-<li>Create a placement named &quot;Trending Bets Widget&quot;</li>
-<li>Set the method to <strong>Trending</strong></li>
-<li>Configure filters (e.g., product = Sports, category = Football)</li>
-<li>Set the time window (e.g., trending in the last 24 hours)</li>
-</ol>
-<h3>Make the API Request</h3>
-<pre><code class="language-bash">curl -X POST &quot;https://api.opti-x.optimove.net/recommend/v1/placements/trending-bets-widget/recommendations&quot; \
-  -H &quot;x-api-key: your-api-key&quot; \
-  -H &quot;x-brand-key: your-brand-key&quot; \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#39;{
-    &quot;userId&quot;: &quot;user_67890&quot;,
-    &quot;type&quot;: &quot;recommendation&quot;,
-    &quot;context&quot;: {
-      &quot;product&quot;: &quot;Sports&quot;,
-      &quot;category&quot;: &quot;Football&quot;
-    }
-  }&#39;
-</code></pre>
-<h3>Response</h3>
-<pre><code class="language-json">{
-  &quot;recommendation&quot;: {
-    &quot;result&quot;: [
-      {
-        &quot;selection&quot;: {
-          &quot;selectionKey&quot;: 1196055705,
-          &quot;selectionName&quot;: &quot;Both Teams to Score - Yes&quot;,
-          &quot;marketName&quot;: &quot;Both Teams to Score&quot;,
-          &quot;eventName&quot;: &quot;Arsenal vs Chelsea&quot;,
-          &quot;score&quot;: 0.89,
-          &quot;rank&quot;: 1
-        }
-      },
-      {
-        &quot;selection&quot;: {
-          &quot;selectionKey&quot;: 1196055712,
-          &quot;selectionName&quot;: &quot;Over 2.5 Goals&quot;,
-          &quot;marketName&quot;: &quot;Total Goals&quot;,
-          &quot;eventName&quot;: &quot;Liverpool vs Man City&quot;,
-          &quot;score&quot;: 0.85,
-          &quot;rank&quot;: 2
-        }
-      }
-    ],
-    &quot;recId&quot;: &quot;rec-trending-e5f6g7h8&quot;,
-    &quot;recDateTime&quot;: &quot;2025-01-15T14:35:00Z&quot;,
-    &quot;explanation&quot;: {
-      &quot;reason&quot;: &quot;trending&quot;,
-      &quot;tag_type&quot;: &quot;portlet&quot;,
-      &quot;tag&quot;: &quot;Trending Now&quot;
-    }
-  }
-}
-</code></pre>
-<h2>Combining Popular and Trending</h2>
-<p>You can create multiple placements with different methods and display them together:</p>
-<pre><code>[Homepage]
-├── &quot;Recommended for You&quot; (Personalized method)
-├── &quot;Trending Now&quot; (Trending method)
-└── &quot;All-Time Favorites&quot; (Popular method)
-</code></pre>
-<p>Each section uses the same Recommend API with different placement keys, giving you a consistent integration pattern.</p>
-<h2>Configuration Options</h2>
-<p>When creating Popular or Trending placements in the Admin panel, you can configure:</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Time Window</td>
-<td>Period to calculate popularity/trending (e.g., 24 hours, 7 days)</td>
-</tr>
-<tr>
-<td>Category Filter</td>
-<td>Limit to specific categories</td>
-</tr>
-<tr>
-<td>Item Count</td>
-<td>Number of items to return</td>
-</tr>
-<tr>
-<td>Deduplication</td>
-<td>Prevent items from appearing in multiple placements</td>
-</tr>
-</tbody></table>
-<h2>Best Practices</h2>
-<h3>Use Both Popular and Trending</h3>
-<p>Popular shows proven winners; Trending shows emerging content. Using both gives users a complete picture of what is happening on your platform.</p>
-<h3>Update Trending Frequently</h3>
-<p>Trending data changes rapidly. Consider refreshing Trending sections more frequently than Popular sections to keep content fresh.</p>
-<h3>Provide Context for New Users</h3>
-<p>Popular items work well as fallback recommendations for users without history, ensuring everyone sees engaging content.</p>
-<h3>Combine with Personalization</h3>
-<p>Use Momentum data alongside personalized recommendations. A page might show &quot;Recommended for You&quot; (personalized), &quot;Trending Now&quot; (trending), and &quot;Most Popular&quot; (popular) sections together.</p>
+<p>All existing Recommend API integrations that use Popular or Trending methods continue to work with no changes required.</p>
 <hr>
 <h2>Related Topics</h2>
 <ul>
+<li><a href="#recommend-api">Recommend API</a> - Full API documentation including Popular and Trending methods</li>
 <li><a href="#api-reference-overview">API Overview</a></li>
-<li><a href="#recommend-api">Recommend API</a> - Full API documentation</li>
-<li><a href="#intelligent-layouts-api">Intelligent Layouts API</a> - Combine multiple placements</li>
-<li><a href="#authentication">Authentication Guide</a></li>
 </ul>
 
 </section>
 <section id="gaming-inventory-api" class="doc-section">
 <h1>Gaming Inventory API</h1>
-<p>The Gaming Inventory API enables you to upload and manage your gaming catalog within Opti-X. This inventory data powers recommendations, search, and personalization features.</p>
+<p>The Gaming Inventory API enables you to upload and manage your gaming catalog within Personalize. This inventory data powers recommendations, search, and personalization features.</p>
 <h2>Why This Matters</h2>
-<p>Opti-X needs to know what items exist in your catalog to recommend them. By uploading your gaming inventory, you enable:</p>
+<p>Personalize needs to know what items exist in your catalog to recommend them. By uploading your gaming inventory, you enable:</p>
 <ul>
 <li>Personalized game recommendations</li>
 <li>Accurate search results</li>
@@ -6222,7 +6014,7 @@ function handleSearchInput(query) {
 <h2>Prerequisites</h2>
 <p>Before using this API, ensure you have:</p>
 <ol>
-<li><strong>API Keys</strong> - Valid <code>x-api-key</code> and <code>x-brand-key</code> from the Opti-X Admin panel (Developer Tools &gt; API Keys)</li>
+<li><strong>API Keys</strong> - Valid <code>x-api-key</code> and <code>x-brand-key</code> from the Personalize Admin panel (Developer Tools &gt; API Keys)</li>
 <li><strong>Service or User Key</strong> - Inventory upload requires elevated permissions (not a Public key)</li>
 <li><strong>Inventory Data</strong> - Your game catalog in the required JSON format</li>
 </ol>
@@ -6409,7 +6201,7 @@ function handleSearchInput(query) {
 <h2>Upload Process</h2>
 <p>Uploading inventory is a two-step process:</p>
 <ol>
-<li><strong>Get a presigned URL</strong> from Opti-X</li>
+<li><strong>Get a presigned URL</strong> from Personalize</li>
 <li><strong>Upload your file</strong> directly to cloud storage using that URL</li>
 </ol>
 <p>This approach allows for large file uploads without timeout issues.</p>
@@ -6497,7 +6289,7 @@ upload_inventory(
 )
 </code></pre>
 <h3>Processing</h3>
-<p>After upload, Opti-X processes your inventory asynchronously. Processing typically completes within a few minutes. Once processed, your inventory data appears in the Admin panel under <strong>Data &gt; Datasets</strong>.</p>
+<p>After upload, Personalize processes your inventory asynchronously. Processing typically completes within a few minutes. Once processed, your inventory data appears in the Admin panel under <strong>Data &gt; Datasets</strong>.</p>
 <h2>Validation Endpoint</h2>
 <p>Before uploading a full inventory, validate a sample to catch formatting errors.</p>
 <pre><code>POST https://api.opti-x.optimove.net/inventory/v1/validate
@@ -6630,7 +6422,7 @@ upload_inventory(
 <h3>Validate Before Upload</h3>
 <p>Always run validation on a sample before uploading your full inventory. This catches data type issues early.</p>
 <h3>Include All Attributes</h3>
-<p>The more attributes you provide, the better Opti-X can:</p>
+<p>The more attributes you provide, the better Personalize can:</p>
 <ul>
 <li>Filter recommendations by device type</li>
 <li>Apply regulatory restrictions</li>
@@ -6662,7 +6454,7 @@ upload_inventory(
 </section>
 <section id="rate-limits" class="doc-section">
 <h1>Rate Limits</h1>
-<p>Opti-X APIs enforce rate limits to ensure system stability and fair usage across all clients. This guide explains the limits and how to work within them.</p>
+<p>Personalize APIs enforce rate limits to ensure system stability and fair usage across all clients. This guide explains the limits and how to work within them.</p>
 <h2>Why This Matters</h2>
 <p>Rate limits protect the platform from:</p>
 <ul>
@@ -6967,11 +6759,11 @@ async function pollSportsInventory() {
 </section>
 <section id="error-handling" class="doc-section">
 <h1>Error Handling</h1>
-<p>This guide covers how to handle errors when integrating with Opti-X APIs, including common error codes, response formats, and retry strategies.</p>
+<p>This guide covers how to handle errors when integrating with Personalize APIs, including common error codes, response formats, and retry strategies.</p>
 <h2>Why This Matters</h2>
 <p>Robust error handling ensures your application degrades gracefully when issues occur. Users should never see a broken experience because of an API error. Instead, your application should handle errors silently or show appropriate fallback content.</p>
 <h2>HTTP Status Codes</h2>
-<p>Opti-X APIs use standard HTTP status codes to indicate success or failure.</p>
+<p>Personalize APIs use standard HTTP status codes to indicate success or failure.</p>
 <h3>Success Codes</h3>
 <table>
 <thead>
@@ -7397,7 +7189,7 @@ def fetch_with_retry(
 </code></pre>
 <h2>Logging and Monitoring</h2>
 <h3>Include Request IDs</h3>
-<p>Always log the <code>requestId</code> from error responses. This helps Opti-X support diagnose issues:</p>
+<p>Always log the <code>requestId</code> from error responses. This helps Personalize support diagnose issues:</p>
 <pre><code class="language-javascript">catch (error) {
   console.error(&#39;API Error&#39;, {
     message: error.message,
@@ -7415,7 +7207,7 @@ def fetch_with_retry(
 </ul>
 <p>Alert when error rates exceed thresholds to catch issues early.</p>
 <h2>Getting Help</h2>
-<p>When contacting Opti-X support about an error:</p>
+<p>When contacting Personalize support about an error:</p>
 <ol>
 <li><strong>Include the requestId</strong> from the error response</li>
 <li><strong>Provide the full request</strong> (URL, headers minus the API key, body)</li>
@@ -7433,7 +7225,7 @@ def fetch_with_retry(
 </section>
 <section id="events-overview" class="doc-section">
 <h1>Events Overview</h1>
-<p>Events are the foundation of Opti-X&#39;s personalization engine. They capture user actions and behaviors in real-time, enabling the system to deliver relevant recommendations and trigger timely campaigns.</p>
+<p>Events are the foundation of Personalize&#39;s personalization engine. They capture user actions and behaviors in real-time, enabling the system to deliver relevant recommendations and trigger timely campaigns.</p>
 <h2>What Are Events?</h2>
 <p>Events represent discrete user actions on your platform. Each event contains:</p>
 <ul>
@@ -7442,26 +7234,26 @@ def fetch_with_retry(
 <li><strong>Timestamp</strong>: Records when the action occurred</li>
 <li><strong>Context data</strong>: Provides additional details about the action</li>
 </ul>
-<p>When users interact with your platform, these events flow into Opti-X and build a comprehensive picture of user behavior over time.</p>
+<p>When users interact with your platform, these events flow into Personalize and build a comprehensive picture of user behavior over time.</p>
 <h2>Why Events Matter</h2>
 <p>Events power two core capabilities:</p>
 <ol>
-<li><p><strong>Personalized Recommendations</strong>: Opti-X analyzes event patterns to understand user preferences and predict what content or products they want to see next.</p>
+<li><p><strong>Personalized Recommendations</strong>: Personalize analyzes event patterns to understand user preferences and predict what content or products they want to see next.</p>
 </li>
 <li><p><strong>Smart Campaigns</strong>: Events trigger automated campaigns at the right moment, such as sending a notification when a user&#39;s favorite team is about to play or alerting them when a previously viewed item drops in price.</p>
 </li>
 </ol>
 <h2>Event Ingestion Methods</h2>
-<p>Opti-X supports two primary methods for ingesting events:</p>
+<p>Personalize supports two primary methods for ingesting events:</p>
 <h3>Real-Time Ingestion</h3>
-<p>Real-time events stream directly to Opti-X as they occur. This method is ideal for:</p>
+<p>Real-time events stream directly to Personalize as they occur. This method is ideal for:</p>
 <ul>
 <li>Page views and browsing behavior</li>
 <li>Game launches and session activity</li>
 <li>Bet placements and cart additions</li>
 <li>Any action requiring immediate response</li>
 </ul>
-<p>Real-time ingestion uses the Opti-X SDK or direct API calls. For high-volume scenarios, AWS Kinesis integration provides scalable streaming.</p>
+<p>Real-time ingestion uses the Personalize SDK or direct API calls.</p>
 <h3>Batch Ingestion</h3>
 <p>Batch ingestion processes events in scheduled intervals. This method suits:</p>
 <ul>
@@ -7472,7 +7264,7 @@ def fetch_with_retry(
 </ul>
 <p>Batch files are typically uploaded via SFTP or cloud storage integration.</p>
 <h2>Event Types by Vertical</h2>
-<p>Different industries require different event types. Opti-X supports specialized events for each vertical:</p>
+<p>Different industries require different event types. Personalize supports specialized events for each vertical:</p>
 <h3>Gaming Events</h3>
 <ul>
 <li><strong>Game Launch</strong>: User starts playing a game</li>
@@ -7538,16 +7330,15 @@ def fetch_with_retry(
 <li><a href="#gaming-events">Gaming Events</a> - Events for casino and gaming platforms</li>
 <li><a href="#sports-events">Sports Events</a> - Events for sports betting platforms</li>
 <li><a href="#ecommerce-events">E-commerce Events</a> - Events for retail and e-commerce</li>
-<li><a href="#kinesis-integration">AWS Kinesis Integration</a> - High-volume event streaming</li>
 </ul>
 
 </section>
 <section id="standard-events" class="doc-section">
 <h1>Standard User Events</h1>
 <p>Standard events capture fundamental user activities that apply across all verticals. These events track account-related actions such as registrations, logins, deposits, and withdrawals, as well as basic browsing behavior.</p>
-<p>Implementing standard events enables core Opti-X functionality and provides the foundation for vertical-specific features.</p>
+<p>Implementing standard events enables core Personalize functionality and provides the foundation for vertical-specific features.</p>
 <h2>Page Visit</h2>
-<p>The Page Visit event records when a user views a specific page on your platform. This is the most fundamental event type and is <strong>mandatory</strong> for Opti-X integration.</p>
+<p>The Page Visit event records when a user views a specific page on your platform. This is the most fundamental event type and is <strong>mandatory</strong> for Personalize integration.</p>
 <p>Page Visit events enable:</p>
 <ul>
 <li>Browsing behavior analysis</li>
@@ -7556,7 +7347,7 @@ def fetch_with_retry(
 <li>Recommendation personalization based on viewing history</li>
 </ul>
 <h3>Why This Matters</h3>
-<p>Without Page Visit events, Opti-X cannot understand how users navigate your platform. This event forms the basis for &quot;Similar Users&quot; recommendations and contributes to nearly every personalization method.</p>
+<p>Without Page Visit events, Personalize cannot understand how users navigate your platform. This event forms the basis for &quot;Similar Users&quot; recommendations and contributes to nearly every personalization method.</p>
 <h3>Event Setup</h3>
 <table>
 <thead>
@@ -7623,7 +7414,7 @@ def fetch_with_retry(
 <li>Email collection for communications</li>
 </ul>
 <h3>Why This Matters</h3>
-<p>Registration marks the beginning of a user&#39;s journey. Capturing this event allows Opti-X to trigger onboarding campaigns and begin building a personalization profile from day one.</p>
+<p>Registration marks the beginning of a user&#39;s journey. Capturing this event allows Personalize to trigger onboarding campaigns and begin building a personalization profile from day one.</p>
 <h3>Event Setup</h3>
 <table>
 <thead>
@@ -8183,15 +7974,14 @@ def fetch_with_retry(
 <li><a href="#gaming-events">Gaming Events</a> - Gaming-specific events</li>
 <li><a href="#sports-events">Sports Events</a> - Sports betting events</li>
 <li><a href="#ecommerce-events">E-commerce Events</a> - Retail and e-commerce events</li>
-<li><a href="#kinesis-integration">AWS Kinesis Integration</a> - High-volume event streaming</li>
 </ul>
 
 </section>
 <section id="gaming-events" class="doc-section">
 <h1>Gaming Events</h1>
-<p>This page explains how event data powers Opti-X Recommend and Smart Campaigns for gaming platforms. Understanding which events drive each feature helps you prioritize your integration and maximize personalization effectiveness.</p>
+<p>This page explains how event data powers Personalize Recommend and Smart Campaigns for gaming platforms. Understanding which events drive each feature helps you prioritize your integration and maximize personalization effectiveness.</p>
 <blockquote>
-<p><strong>Note</strong>: Event requirements may evolve as Opti-X adds new capabilities. To future-proof your integration, send as many relevant events as possible.</p>
+<p><strong>Note</strong>: Event requirements may evolve as Personalize adds new capabilities. To future-proof your integration, send as many relevant events as possible.</p>
 </blockquote>
 <blockquote>
 <p><strong>Important</strong>: Both Recommend and Smart Campaigns require inventory data alongside events. Without a gaming inventory feed, recommendation and targeting logic cannot function. See <a href="#gaming-inventory">Gaming Inventory</a> for setup instructions.</p>
@@ -8238,7 +8028,7 @@ def fetch_with_retry(
 </tr>
 </tbody></table>
 <h2>Why This Matters</h2>
-<p>Gaming events form the foundation of personalized game discovery. When a user launches games, Opti-X learns their preferences and can recommend similar titles. When combined with session data showing wins and gameplay duration, the system identifies patterns that drive engagement.</p>
+<p>Gaming events form the foundation of personalized game discovery. When a user launches games, Personalize learns their preferences and can recommend similar titles. When combined with session data showing wins and gameplay duration, the system identifies patterns that drive engagement.</p>
 <p>For example:</p>
 <ul>
 <li>A user who frequently launches slot games with Irish themes will see more Irish-themed slots in their recommendations</li>
@@ -8403,15 +8193,14 @@ def fetch_with_retry(
 <li><a href="#standard-events">Standard Events</a> - Common events across verticals</li>
 <li><a href="#gaming-inventory">Gaming Inventory</a> - Setting up game catalog data</li>
 <li><a href="#gaming-filtering">Gaming Filtering</a> - Filtering recommendations by tags and regions</li>
-<li><a href="#kinesis-integration">AWS Kinesis Integration</a> - High-volume event streaming</li>
 </ul>
 
 </section>
 <section id="sports-events" class="doc-section">
 <h1>Sports Events</h1>
-<p>This page explains how event data powers Opti-X Recommend and Smart Campaigns for sports betting platforms. Understanding which events drive each feature helps you prioritize your integration and deliver relevant betting recommendations.</p>
+<p>This page explains how event data powers Personalize Recommend and Smart Campaigns for sports betting platforms. Understanding which events drive each feature helps you prioritize your integration and deliver relevant betting recommendations.</p>
 <blockquote>
-<p><strong>Note</strong>: Event requirements may evolve as Opti-X adds new capabilities. To future-proof your integration, send as many relevant events as possible.</p>
+<p><strong>Note</strong>: Event requirements may evolve as Personalize adds new capabilities. To future-proof your integration, send as many relevant events as possible.</p>
 </blockquote>
 <blockquote>
 <p><strong>Important</strong>: Both Recommend and Smart Campaigns require inventory data alongside events. Without a sports inventory feed, recommendation and targeting logic cannot function. See <a href="#sports-inventory">Sports Inventory</a> for setup instructions.</p>
@@ -8619,15 +8408,14 @@ def fetch_with_retry(
 <li><a href="#standard-events">Standard Events</a> - Common events across verticals</li>
 <li><a href="#sports-inventory">Sports Inventory</a> - Setting up sports catalog data</li>
 <li><a href="#sports-filtering">Sports Filtering</a> - Filtering by price, time, and categories</li>
-<li><a href="#kinesis-integration">AWS Kinesis Integration</a> - High-volume event streaming</li>
 </ul>
 
 </section>
 <section id="ecommerce-events" class="doc-section">
 <h1>E-commerce Events</h1>
-<p>This page explains how event data powers Opti-X Recommend and Smart Campaigns for e-commerce and retail platforms. Understanding which events drive each feature helps you prioritize your integration and maximize conversion through personalization.</p>
+<p>This page explains how event data powers Personalize Recommend and Smart Campaigns for e-commerce and retail platforms. Understanding which events drive each feature helps you prioritize your integration and maximize conversion through personalization.</p>
 <blockquote>
-<p><strong>Note</strong>: Event requirements may evolve as Opti-X adds new capabilities. To future-proof your integration, send as many relevant events as possible.</p>
+<p><strong>Note</strong>: Event requirements may evolve as Personalize adds new capabilities. To future-proof your integration, send as many relevant events as possible.</p>
 </blockquote>
 <blockquote>
 <p><strong>Important</strong>: Both Recommend and Smart Campaigns require inventory data alongside events. Without a product inventory feed, recommendation and targeting logic cannot function. See <a href="#ecommerce-inventory">E-commerce Inventory</a> for setup instructions.</p>
@@ -8817,213 +8605,14 @@ def fetch_with_retry(
 <li><a href="#events-overview">Events Overview</a> - Understanding the event system</li>
 <li><a href="#standard-events">Standard Events</a> - Common events across verticals</li>
 <li><a href="#ecommerce-inventory">E-commerce Inventory</a> - Setting up product catalog data</li>
-<li><a href="#kinesis-integration">AWS Kinesis Integration</a> - High-volume event streaming</li>
-</ul>
-
-</section>
-<section id="kinesis-integration" class="doc-section">
-<h1>AWS Kinesis Integration</h1>
-<p>This guide describes how to set up and test AWS Kinesis for streaming events to Opti-X. Kinesis integration is ideal for high-volume event ingestion scenarios where you need scalable, real-time data streaming.</p>
-<h2>When to Use Kinesis</h2>
-<p>Consider AWS Kinesis integration when:</p>
-<ul>
-<li>Your platform generates high event volumes (thousands of events per second)</li>
-<li>You need guaranteed delivery and ordering of events</li>
-<li>Your infrastructure already uses AWS services</li>
-<li>You want to decouple event production from Opti-X API calls</li>
-</ul>
-<p>For lower-volume scenarios or simpler integrations, direct API calls to Opti-X may be sufficient. Consult your Integration Manager to determine the best approach for your use case.</p>
-<h2>Installation and Configuration</h2>
-<ol>
-<li><p>Install AWS CLI if not already installed. Follow the official guide: <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html</a></p>
-</li>
-<li><p>Configure the AWS CLI with your Opti-X credentials:</p>
-</li>
-</ol>
-<pre><code class="language-bash">aws configure --profile opti-x-events
-</code></pre>
-<p>You will be prompted for:</p>
-<ul>
-<li><strong>AWS Access Key ID</strong>: Provided by your Integration Manager</li>
-<li><strong>AWS Secret Access Key</strong>: Provided by your Integration Manager</li>
-<li><strong>Default region name</strong>: <code>eu-west-1</code> (or the region specified by your Integration Manager)</li>
-</ul>
-<h2>Understanding Kinesis Concepts</h2>
-<p>AWS Kinesis uses Streams and Shards to manage data flows and scaling. This architecture is comparable to Kafka Topics and Partitions:</p>
-<pre><code>┌─────────────────────────────────────────────────┐
-│              Kinesis Stream                      │
-│  (Your event stream, e.g., &quot;user-events&quot;)       │
-└─────────────────┬───────────────────────────────┘
-                  │
-     ┌────────────┼────────────┐
-     │            │            │
-     ▼            ▼            ▼
-┌─────────┐  ┌─────────┐  ┌─────────┐
-│ Shard 1 │  │ Shard 2 │  │ Shard N │
-│         │  │         │  │         │
-│ Records │  │ Records │  │ Records │
-└─────────┘  └─────────┘  └─────────┘
-</code></pre>
-<ul>
-<li><strong>Stream</strong>: A named resource representing your event flow</li>
-<li><strong>Shards</strong>: Parallel processing units that provide throughput capacity</li>
-<li><strong>Records</strong>: Individual event data items within shards</li>
-</ul>
-<h2>Verifying Your Integration</h2>
-<h3>Step 1: List Shards</h3>
-<p>Request your stream name from your Integration Manager. Use it in subsequent commands. For example, for a stream named <code>my-brand-events</code>:</p>
-<pre><code class="language-bash">aws kinesis list-shards \
-  --stream-name my-brand-events \
-  --profile opti-x-events
-</code></pre>
-<h3>Expected Output</h3>
-<pre><code class="language-json">{
-  &quot;Shards&quot;: [
-    {
-      &quot;ShardId&quot;: &quot;shardId-000000000000&quot;,
-      &quot;HashKeyRange&quot;: {
-        &quot;StartingHashKey&quot;: &quot;0&quot;,
-        &quot;EndingHashKey&quot;: &quot;340282366920938463463374607431768211455&quot;
-      },
-      &quot;SequenceNumberRange&quot;: {
-        &quot;StartingSequenceNumber&quot;: &quot;49614023790783601483728905336480125602121137113222086658&quot;
-      }
-    }
-  ]
-}
-</code></pre>
-<h2>Reading Data from Kinesis</h2>
-<p>To verify events are flowing correctly, you can read data from the stream.</p>
-<h3>Step 2: Understand Shard Iterator Types</h3>
-<p>Before reading records, you need a shard iterator. The iterator type determines where reading begins:</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>TRIM_HORIZON</td>
-<td>Start from the beginning of retained data (up to 24 hours)</td>
-</tr>
-<tr>
-<td>LATEST</td>
-<td>Start from the most recent record</td>
-</tr>
-</tbody></table>
-<p>For more details, see the AWS documentation: <a href="https://docs.aws.amazon.com/cli/latest/reference/kinesis/get-shard-iterator.html">https://docs.aws.amazon.com/cli/latest/reference/kinesis/get-shard-iterator.html</a></p>
-<h3>Step 3: Get Shard Iterator and Read Records</h3>
-<p>Use the shard ID from the previous step (e.g., <code>shardId-000000000000</code>):</p>
-<pre><code class="language-bash">SHARD_ITERATOR=$(aws kinesis get-shard-iterator \
-  --shard-id shardId-000000000000 \
-  --shard-iterator-type TRIM_HORIZON \
-  --stream-name my-brand-events \
-  --query &#39;ShardIterator&#39; \
-  --profile opti-x-events)
-
-aws kinesis get-records \
-  --shard-iterator $SHARD_ITERATOR \
-  --profile opti-x-events
-</code></pre>
-<h3>Expected Response</h3>
-<pre><code class="language-json">{
-  &quot;Records&quot;: [],
-  &quot;NextShardIterator&quot;: &quot;AAAAAAAAAAEROtFEiWoVdkmoa62xtMBG0LHYJVnQ24V5f2AgVR0dKTz021+VN2DZsDOM0zkKNra0ObvMV83s+e3xzxJ057eS+ESfxUtnd9megbDLlb7pJIP5r2NxsMgEr1LbAZRBozHt6HkNP0Gv94rSTVhoelmuvrCQ&quot;,
-  &quot;MillisBehindLatest&quot;: 85128000
-}
-</code></pre>
-<h3>Understanding the Response</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>Records: []</code></td>
-<td>No data currently in the stream (or at this position)</td>
-</tr>
-<tr>
-<td><code>Records: [...]</code></td>
-<td>Contains event data (base64 encoded)</td>
-</tr>
-<tr>
-<td><code>NextShardIterator</code></td>
-<td>Use this iterator to fetch the next batch of records</td>
-</tr>
-<tr>
-<td><code>MillisBehindLatest</code></td>
-<td>How far behind real-time the current position is (in milliseconds)</td>
-</tr>
-</tbody></table>
-<h3>Step 4: Read Subsequent Batches</h3>
-<p>To continue reading, use the <code>NextShardIterator</code> from the previous response:</p>
-<pre><code class="language-bash">aws kinesis get-records \
-  --shard-iterator &quot;AAAAAAAAAAEROtFEiWoVdkmoa62...&quot; \
-  --profile opti-x-events
-</code></pre>
-<h2>Decoding Records</h2>
-<p>Records in Kinesis are base64 encoded. To view the actual event data:</p>
-<pre><code class="language-bash"># Using jq to decode a single record
-echo &quot;BASE64_ENCODED_DATA&quot; | base64 --decode | jq .
-</code></pre>
-<p>Or in Python:</p>
-<pre><code class="language-python">import base64
-import json
-
-encoded_data = &quot;BASE64_ENCODED_DATA&quot;
-decoded = base64.b64decode(encoded_data)
-event = json.loads(decoded)
-print(json.dumps(event, indent=2))
-</code></pre>
-<h2>Troubleshooting</h2>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Possible Cause</th>
-<th>Solution</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Empty Records array</td>
-<td>No events sent yet</td>
-<td>Send test events and wait a few seconds</td>
-</tr>
-<tr>
-<td>Access denied</td>
-<td>Invalid credentials</td>
-<td>Verify AWS keys with Integration Manager</td>
-</tr>
-<tr>
-<td>Stream not found</td>
-<td>Incorrect stream name</td>
-<td>Confirm stream name with Integration Manager</td>
-</tr>
-<tr>
-<td>Expired iterator</td>
-<td>Iterator timed out (5 minutes)</td>
-<td>Get a new shard iterator</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>Related Topics</h2>
-<ul>
-<li><a href="#events-overview">Events Overview</a> - Understanding the event system</li>
-<li><a href="#standard-events">Standard Events</a> - Common events across verticals</li>
-<li><a href="#gaming-events">Gaming Events</a> - Gaming-specific events</li>
-<li><a href="#sports-events">Sports Events</a> - Sports betting events</li>
-<li><a href="#ecommerce-events">E-commerce Events</a> - Retail and e-commerce events</li>
 </ul>
 
 </section>
 <section id="filtering-overview" class="doc-section">
 <h1>Filtering Overview</h1>
-<p>Filtering enables you to refine Opti-X recommendations and search results based on specific criteria. By applying filters, you ensure users see only relevant, compliant, and contextually appropriate content.</p>
+<p>Filtering enables you to refine Personalize recommendations and search results based on specific criteria. By applying filters, you ensure users see only relevant, compliant, and contextually appropriate content.</p>
 <h2>What Is Filtering?</h2>
-<p>Filtering narrows down recommendation and search results based on rules you define. When a user requests recommendations, Opti-X generates personalized results, then applies your filters to remove items that don&#39;t match the specified criteria.</p>
+<p>Filtering narrows down recommendation and search results based on rules you define. When a user requests recommendations, Personalize generates personalized results, then applies your filters to remove items that don&#39;t match the specified criteria.</p>
 <p>Common filtering scenarios include:</p>
 <ul>
 <li>Showing only games available under a user&#39;s regulatory license</li>
@@ -9040,7 +8629,7 @@ print(json.dumps(event, indent=2))
 <h3>Business Rules</h3>
 <p>You may want to promote certain suppliers, exclude clearance items from premium placements, or limit results to specific categories. Filtering implements these business rules at the API level.</p>
 <h2>Filter Types</h2>
-<p>Opti-X supports several filtering approaches:</p>
+<p>Personalize supports several filtering approaches:</p>
 <h3>Tag-Based Filtering</h3>
 <p>Tag-based filters use metadata attached to inventory items. Games, products, and events can have tags like supplier, category, theme, or custom attributes.</p>
 <p><strong>Example use cases:</strong></p>
@@ -9083,12 +8672,12 @@ print(json.dumps(event, indent=2))
 </ul>
 <p>See <a href="#sports-filtering">Sports Filtering</a> for time filter syntax.</p>
 <h2>How Filtering Works</h2>
-<p>Filtering applies at the API request level. You include filter parameters in your recommendation or search request, and Opti-X applies them before returning results.</p>
+<p>Filtering applies at the API request level. You include filter parameters in your recommendation or search request, and Personalize applies them before returning results.</p>
 <p>The typical flow:</p>
 <ol>
-<li><strong>User makes a request</strong>: Your application calls the Opti-X API with user context</li>
+<li><strong>User makes a request</strong>: Your application calls the Personalize API with user context</li>
 <li><strong>Include filter parameters</strong>: Add tags, location, or query modifiers to the request</li>
-<li><strong>Opti-X generates results</strong>: The recommendation engine produces personalized results</li>
+<li><strong>Personalize generates results</strong>: The recommendation engine produces personalized results</li>
 <li><strong>Filters apply</strong>: Results that don&#39;t match filter criteria are removed</li>
 <li><strong>Filtered results return</strong>: Your application receives only compliant, relevant items</li>
 </ol>
@@ -9125,7 +8714,7 @@ print(json.dumps(event, indent=2))
 <li><code>query</code> includes a time modifier (&quot;today&quot;) for time-based filtering</li>
 </ul>
 <h2>Combining Filters</h2>
-<p>Multiple filter types can be combined in a single request. Opti-X applies them in sequence, creating an AND relationship between different filter types.</p>
+<p>Multiple filter types can be combined in a single request. Personalize applies them in sequence, creating an AND relationship between different filter types.</p>
 <p>For example, a request might:</p>
 <ol>
 <li>Filter to UKGC-licensed games (trait-based)</li>
@@ -9171,7 +8760,7 @@ print(json.dumps(event, indent=2))
 <h2>Tag-Based Filtering</h2>
 <p>Tag-based filtering enables explicit data filtering through tags in conjunction with search queries. Use tag filters to implement features like supplier buttons, category filters, or compliance rules in your front-end interface.</p>
 <h3>How Tag Filtering Works</h3>
-<p>Every game in your inventory can have tags (supplier, category, theme, etc.). Tag rules tell Opti-X which games to include or exclude based on these tags.</p>
+<p>Every game in your inventory can have tags (supplier, category, theme, etc.). Tag rules tell Personalize which games to include or exclude based on these tags.</p>
 <p><strong>Common use cases:</strong></p>
 <ul>
 <li>Filter to games from a specific supplier (e.g., &quot;Show only NetEnt games&quot;)</li>
@@ -9332,15 +8921,15 @@ print(tags)
 <p>This returns Blueprint Gaming games that are NOT in the jackpot category.</p>
 <hr>
 <h2>Region-Based Filtering</h2>
-<p>Region-based filtering returns results relevant to the user&#39;s location. When you provide a country code, Opti-X returns region-specific popular searches and rankings.</p>
+<p>Region-based filtering returns results relevant to the user&#39;s location. When you provide a country code, Personalize returns region-specific popular searches and rankings.</p>
 <h3>How Region Filtering Works</h3>
-<p>Include the <code>location</code> field in your request with the user&#39;s country code. Opti-X uses this to:</p>
+<p>Include the <code>location</code> field in your request with the user&#39;s country code. Personalize uses this to:</p>
 <ul>
 <li>Return popular games specific to that country</li>
 <li>Rank search results based on regional popularity</li>
 <li>Surface region-specific trending content</li>
 </ul>
-<p>If no regional data exists for the specified country, Opti-X falls back to global data automatically.</p>
+<p>If no regional data exists for the specified country, Personalize falls back to global data automatically.</p>
 <h3>Example: Region-Specific Popular Games</h3>
 <p>This example retrieves popular games for users in Great Britain:</p>
 <p><strong>Python:</strong></p>
@@ -9420,7 +9009,7 @@ print(&quot;Response:&quot;, response.json())
 </tbody></table>
 <p>Country codes are case-insensitive (&quot;GB&quot; and &quot;gb&quot; both work).</p>
 <h3>Fallback Behavior</h3>
-<p>If regional data isn&#39;t available for the specified country, Opti-X automatically uses global data. This ensures users always receive results, even in markets with limited historical data.</p>
+<p>If regional data isn&#39;t available for the specified country, Personalize automatically uses global data. This ensures users always receive results, even in markets with limited historical data.</p>
 <hr>
 <h2>Combining Tag and Region Filters</h2>
 <p>You can use both filter types in a single request:</p>
@@ -9470,7 +9059,7 @@ print(&quot;Response:&quot;, response.json())
 <h2>Price-Based Filtering</h2>
 <p>Price-based filtering refines sports searches based on odds criteria. Use these filters to help users find selections at their preferred price points.</p>
 <h3>How Price Filtering Works</h3>
-<p>Price filters are added directly to the query string. Opti-X parses these modifiers and applies them to the selection odds in your sports inventory.</p>
+<p>Price filters are added directly to the query string. Personalize parses these modifiers and applies them to the selection odds in your sports inventory.</p>
 <h3>Available Price Filters</h3>
 <p>Combine any search term with these price modifiers. In the examples below, <code>{search}</code> represents your search term (e.g., &quot;football&quot;, &quot;liverpool&quot;, &quot;premier league&quot;):</p>
 <table>
@@ -9524,7 +9113,7 @@ print(&quot;Response:&quot;, response.json())
 <h2>Time-Based Filtering</h2>
 <p>Time-based filtering refines results based on when events are scheduled. Use these filters to show users events within relevant time windows.</p>
 <h3>How Time Filtering Works</h3>
-<p>Time filters are added directly to the query string, similar to price filters. Opti-X interprets these modifiers relative to the current time and returns matching events.</p>
+<p>Time filters are added directly to the query string, similar to price filters. Personalize interprets these modifiers relative to the current time and returns matching events.</p>
 <h3>Available Time Filters</h3>
 <p>Combine any search term with these time modifiers:</p>
 <table>
@@ -9567,7 +9156,7 @@ print(&quot;Response:&quot;, response.json())
 </tr>
 </tbody></table>
 <h3>Time Format Options</h3>
-<p>Opti-X accepts multiple time formats:</p>
+<p>Personalize accepts multiple time formats:</p>
 <ul>
 <li>12-hour: <code>3pm</code>, <code>7:30am</code>, <code>11:45pm</code></li>
 <li>24-hour: <code>15:00</code>, <code>19:30</code>, <code>23:45</code></li>
@@ -9698,19 +9287,19 @@ function applyFilter(searchTerm, filterKey) {
 
 </section>
 <section id="banner-deployment" class="doc-section">
-<h1>Banner Deployment Guide</h1>
+<h1>Smart Content Deployment Guide</h1>
 <h2>Why This Matters</h2>
-<p>Personalized banners transform static marketing into dynamic, relevant experiences. Instead of showing every user the same generic content, Opti-X Banners display product recommendations tailored to each individual based on their behavior, preferences, and context. This personalization typically increases click-through rates by 2-3x compared to static content, because users see products they actually want.</p>
-<p>Banners work across channels: embed them in emails, display them on your website, or include them in push notifications. The same banner configuration adapts to show the right products to the right user at the right time.</p>
+<p>Personalized smart content transform static marketing into dynamic, relevant experiences. Instead of showing every user the same generic content, Personalize Smart Content display product recommendations tailored to each individual based on their behavior, preferences, and context. This personalization typically increases click-through rates by 2-3x compared to static content, because users see products they actually want.</p>
+<p>Smart Content work across channels: embed them in emails, display them on your website, or include them in push notifications. The same smart content configuration adapts to show the right products to the right user at the right time.</p>
 <h2>Deployment Options</h2>
-<p>There are two primary ways to render Opti-X Banner content:</p>
+<p>There are two primary ways to render Personalize Smart Content content:</p>
 <ol>
-<li><strong>Image-based banners</strong> - Reference Opti-X banner image URLs that dynamically generate personalized content</li>
-<li><strong>Code-based banners</strong> - Implement JavaScript code that builds the banner directly in your site</li>
+<li><strong>Image-based smart content</strong> - Reference Personalize smart content image URLs that dynamically generate personalized content</li>
+<li><strong>Code-based smart content</strong> - Implement JavaScript code that builds the smart content directly in your site</li>
 </ol>
 <p>Both approaches deliver personalized recommendations. Choose image-based for email and simple implementations. Choose code-based for richer website interactions.</p>
-<h2>Making Banners Personalized</h2>
-<p>The power of Opti-X Banners comes from generating personalized content for each user. To achieve this personalization, banner URLs require parameters that identify who is viewing the content and where.</p>
+<h2>Making Smart Content Personalized</h2>
+<p>The power of Personalize Smart Content comes from generating personalized content for each user. To achieve this personalization, smart content URLs require parameters that identify who is viewing the content and where.</p>
 <h3>Required Parameters</h3>
 <table>
 <thead>
@@ -9722,7 +9311,7 @@ function applyFilter(searchTerm, filterKey) {
 </thead>
 <tbody><tr>
 <td><code>bannerKey</code></td>
-<td>Unique identifier for the banner configuration. Found in the Opti-X Admin panel under Widget Manager.</td>
+<td>Unique identifier for the smart content configuration. Found in the Personalize Admin panel under Widget Manager.</td>
 <td><code>f34a724d-c41e-4716-b6b4-77d3c8...</code></td>
 </tr>
 <tr>
@@ -9732,17 +9321,17 @@ function applyFilter(searchTerm, filterKey) {
 </tr>
 <tr>
 <td><code>userId</code></td>
-<td>Identifies the end user viewing the banner. Enables the AI model to return personalized recommendations.</td>
+<td>Identifies the end user viewing the smart content. Enables the AI model to return personalized recommendations.</td>
 <td><code>CUSTOMER_123456</code></td>
 </tr>
 <tr>
 <td><code>contextId</code></td>
-<td>Ensures uniqueness across multiple banner placements and aligns click-through links with displayed products.</td>
+<td>Ensures uniqueness across multiple smart content placements and aligns click-through links with displayed products.</td>
 <td><code>CUST123:1706745600:slot1</code></td>
 </tr>
 </tbody></table>
 <h3>What Happens Without userId</h3>
-<p>If <code>userId</code> is not supplied or is empty, Opti-X cannot identify the user. The banner displays generic or default recommendations instead of personalized content. These defaults are configured in your banner settings and typically show popular or featured items.</p>
+<p>If <code>userId</code> is not supplied or is empty, Personalize cannot identify the user. The smart content displays generic or default recommendations instead of personalized content. These defaults are configured in your smart content settings and typically show popular or featured items.</p>
 <p><strong>Common causes of missing userId:</strong></p>
 <ul>
 <li>Template tag not replaced (shows literal <code>[%CUSTOMER_ID%]</code> instead of actual ID)</li>
@@ -9750,9 +9339,9 @@ function applyFilter(searchTerm, filterKey) {
 <li>ESP merge field misconfigured</li>
 </ul>
 <h3>Understanding contextId</h3>
-<p>The <code>contextId</code> parameter serves a critical function: it ensures each banner placement shows different recommendations.</p>
-<p><strong>Without a unique contextId:</strong> All users might see the same default content instead of personalized recommendations. If you place multiple banners on one page with identical contextIds, they show duplicate products.</p>
-<p><strong>With proper contextId:</strong> Each banner placement generates unique recommendations, even when using the same banner configuration multiple times.</p>
+<p>The <code>contextId</code> parameter serves a critical function: it ensures each smart content placement shows different recommendations.</p>
+<p><strong>Without a unique contextId:</strong> All users might see the same default content instead of personalized recommendations. If you place multiple smart content on one page with identical contextIds, they show duplicate products.</p>
+<p><strong>With proper contextId:</strong> Each smart content placement generates unique recommendations, even when using the same smart content configuration multiple times.</p>
 <h4>contextId Structure</h4>
 <p>Build your contextId from three segments separated by colons:</p>
 <table>
@@ -9783,8 +9372,8 @@ function applyFilter(searchTerm, filterKey) {
 <p>This structure ensures:</p>
 <ul>
 <li>Same user sees different recommendations in different emails (timestamp varies)</li>
-<li>Same email shows different products in different banner slots (placement varies)</li>
-<li>Recommendations remain consistent if user views the same banner again (all segments match)</li>
+<li>Same email shows different products in different smart content slots (placement varies)</li>
+<li>Recommendations remain consistent if user views the same smart content again (all segments match)</li>
 </ul>
 <h3>What Happens With Wrong or Duplicated contextId</h3>
 <table>
@@ -9799,8 +9388,8 @@ function applyFilter(searchTerm, filterKey) {
 <td>All users see identical recommendations (defeats personalization)</td>
 </tr>
 <tr>
-<td>Same contextId for multiple banners on one page</td>
-<td>Duplicate products across banners</td>
+<td>Same contextId for multiple smart content on one page</td>
+<td>Duplicate products across smart content</td>
 </tr>
 <tr>
 <td>contextId changes on every page load</td>
@@ -9811,9 +9400,9 @@ function applyFilter(searchTerm, filterKey) {
 <td>Falls back to default recommendations, caching issues</td>
 </tr>
 </tbody></table>
-<h2>Embedding Banners in Email</h2>
+<h2>Embedding Smart Content in Email</h2>
 <h3>Optimail Integration</h3>
-<p>If your contract includes both Opti-X Smart Content and Optimail, the Visual Editor provides an &quot;Opti-X Banner&quot; content block. Simply drag the block into your template and select a banner from your Opti-X library.</p>
+<p>If your contract includes both Personalize Smart Content and Optimail, the Visual Editor provides an &quot;Personalize Smart Content&quot; content block. Simply drag the block into your template and select a smart content from your Personalize library.</p>
 <p>Optimail automatically manages all parameters:</p>
 <ul>
 <li><code>userId</code> maps to the recipient&#39;s customer ID</li>
@@ -9822,10 +9411,10 @@ function applyFilter(searchTerm, filterKey) {
 </ul>
 <p>See the dedicated Optimail integration guide for detailed implementation steps.</p>
 <h3>Other Email Service Providers (ESPs)</h3>
-<p>For ESPs not managed by Optimove, collect the banner assets manually:</p>
+<p>For ESPs not managed by Optimove, collect the smart content assets manually:</p>
 <ol>
-<li>Open the Opti-X Widget Manager gallery</li>
-<li>Click &quot;Get Implementation Codes&quot; on your banner</li>
+<li>Open the Personalize Widget Manager gallery</li>
+<li>Click &quot;Get Implementation Codes&quot; on your smart content</li>
 <li>Select the &quot;Image Link&quot; tab</li>
 <li>Copy the provided URLs</li>
 </ol>
@@ -9850,18 +9439,18 @@ function applyFilter(searchTerm, filterKey) {
 </tr>
 </tbody></table>
 <p><strong>Important:</strong> Test that merge tags render actual values before sending. A common mistake is deploying with unresolved tags like literal <code>%%CUSTOMER_ID%%</code> text.</p>
-<h2>Embedding Banners on Websites</h2>
+<h2>Embedding Smart Content on Websites</h2>
 <p>For website personalization, use the HTML code implementation:</p>
 <ol>
-<li>Open the Opti-X Widget Manager gallery</li>
-<li>Click &quot;Get Implementation Codes&quot; on your banner</li>
+<li>Open the Personalize Widget Manager gallery</li>
+<li>Click &quot;Get Implementation Codes&quot; on your smart content</li>
 <li>Select the &quot;HTML Code&quot; tab</li>
 <li>Copy the provided code snippet</li>
 </ol>
 <p>The code includes JavaScript that:</p>
 <ul>
 <li>Fetches personalized recommendations</li>
-<li>Renders the banner in your page</li>
+<li>Renders the smart content in your page</li>
 <li>Tracks impressions and clicks</li>
 </ul>
 <p><strong>Populate the parameters dynamically:</strong></p>
@@ -9872,8 +9461,8 @@ const userId = getCurrentUserId(); // Your function to get logged-in user ID
 const contextId = `${userId}:${Date.now()}:homepage_hero`;
 </code></pre>
 <p>For anonymous users, use a consistent session identifier as <code>userId</code> to maintain recommendation consistency during their visit.</p>
-<h2>Troubleshooting Banner Issues</h2>
-<h3>Blank or Missing Banners</h3>
+<h2>Troubleshooting Smart Content Issues</h2>
+<h3>Blank or Missing Smart Content</h3>
 <table>
 <thead>
 <tr>
@@ -9883,12 +9472,12 @@ const contextId = `${userId}:${Date.now()}:homepage_hero`;
 </tr>
 </thead>
 <tbody><tr>
-<td>Banner doesn&#39;t appear at all</td>
+<td>Smart Content doesn&#39;t appear at all</td>
 <td>Invalid <code>bannerKey</code></td>
 <td>Verify the key in Widget Manager</td>
 </tr>
 <tr>
-<td>White/empty banner space</td>
+<td>White/empty smart content space</td>
 <td>Missing <code>image_url</code> in inventory items</td>
 <td>Add image URLs to your product data</td>
 </tr>
@@ -9943,12 +9532,12 @@ const contextId = `${userId}:${Date.now()}:homepage_hero`;
 </tr>
 </thead>
 <tbody><tr>
-<td>Slow banner loading</td>
+<td>Slow smart content loading</td>
 <td>Large image files</td>
 <td>Optimize images before uploading</td>
 </tr>
 <tr>
-<td>Banners flash/reload</td>
+<td>Smart Content flash/reload</td>
 <td>contextId changes on re-render</td>
 <td>Stabilize contextId calculation</td>
 </tr>
@@ -9961,15 +9550,15 @@ const contextId = `${userId}:${Date.now()}:homepage_hero`;
 <h2>Related Topics</h2>
 <ul>
 <li><a href="#inventory-overview">Inventory Management</a> - Ensure products have required image URLs</li>
-<li><a href="#api-reference-overview">API Reference</a> - Banner API endpoint details</li>
+<li><a href="#api-reference-overview">API Reference</a> - Smart Content API endpoint details</li>
 <li><a href="#common-issues">Common Issues</a> - General troubleshooting guide</li>
-<li><a href="#getting-help">Getting Help</a> - Contact support for banner issues</li>
+<li><a href="#getting-help">Getting Help</a> - Contact support for smart content issues</li>
 </ul>
 
 </section>
 <section id="common-issues" class="doc-section">
 <h1>Common Issues and Solutions</h1>
-<p>This guide covers frequently encountered issues when integrating with Opti-X. Each issue includes the symptom you observe, the underlying cause, and actionable steps to resolve it.</p>
+<p>This guide covers frequently encountered issues when integrating with Personalize. Each issue includes the symptom you observe, the underlying cause, and actionable steps to resolve it.</p>
 <h2>Authentication Issues</h2>
 <h3>401 Unauthorized</h3>
 <p><strong>Symptom:</strong> API requests return HTTP 401 status with message &quot;Unauthorized&quot; or &quot;Invalid API key.&quot;</p>
@@ -9980,7 +9569,7 @@ const contextId = `${userId}:${Date.now()}:homepage_hero`;
 </code></pre>
 </li>
 <li>Check for extra whitespace or hidden characters in the key</li>
-<li>Confirm the key is active in your Opti-X Admin panel under API Keys</li>
+<li>Confirm the key is active in your Personalize Admin panel under API Keys</li>
 <li>If the key was recently created, wait 2-3 minutes for propagation</li>
 </ol>
 <p><strong>Example of correct header:</strong></p>
@@ -10042,7 +9631,7 @@ const contextId = `${userId}:${Date.now()}:homepage_hero`;
 <hr>
 <h3>Same Recommendations for All Users</h3>
 <p><strong>Symptom:</strong> Every user receives identical product recommendations regardless of their history or preferences.</p>
-<p><strong>Cause:</strong> The request is missing <code>userId</code> or using the same <code>userId</code> for all requests. Without user identification, Opti-X returns default/fallback recommendations.</p>
+<p><strong>Cause:</strong> The request is missing <code>userId</code> or using the same <code>userId</code> for all requests. Without user identification, Personalize returns default/fallback recommendations.</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li>Verify <code>userId</code> parameter is included in every request:<pre><code class="language-json">{
@@ -10053,13 +9642,13 @@ const contextId = `${userId}:${Date.now()}:homepage_hero`;
 </li>
 <li>Confirm the userId value changes per user (not hardcoded)</li>
 <li>Check that template merge tags are rendering actual values, not literal tags like <code>[%CUSTOMER_ID%]</code></li>
-<li>For banners, also verify <code>contextId</code> is unique per user/placement</li>
+<li>For smart content, also verify <code>contextId</code> is unique per user/placement</li>
 </ol>
 <p><strong>Test:</strong> Make two requests with different userIds and compare results. If results are identical, the personalization is not working.</p>
 <hr>
 <h3>Irrelevant Recommendations</h3>
 <p><strong>Symptom:</strong> Recommendations are personalized (different per user) but seem unrelated to the page context or user intent.</p>
-<p><strong>Cause:</strong> Missing or incorrect context parameters that help Opti-X understand what the user is currently viewing.</p>
+<p><strong>Cause:</strong> Missing or incorrect context parameters that help Personalize understand what the user is currently viewing.</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li>Add context parameters to your request:<pre><code class="language-json">{
@@ -10233,9 +9822,9 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <li>Check network latency to <code>api.opti-x.optimove.net</code></li>
 </ol>
 <hr>
-<h2>Banner Issues</h2>
-<h3>Blank Banners</h3>
-<p><strong>Symptom:</strong> Banner placeholder appears but shows no content or images.</p>
+<h2>Smart Content Issues</h2>
+<h3>Blank Smart Content</h3>
+<p><strong>Symptom:</strong> Smart Content placeholder appears but shows no content or images.</p>
 <p><strong>Cause:</strong> Products in recommendations are missing <code>image_url</code> field, or images are inaccessible.</p>
 <p><strong>Solution:</strong></p>
 <ol>
@@ -10249,12 +9838,12 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 # Should return HTTP 200 with image content-type
 </code></pre>
 <hr>
-<h3>Same Banner Content for Everyone</h3>
-<p><strong>Symptom:</strong> All users see identical banner content instead of personalized recommendations.</p>
-<p><strong>Cause:</strong> Missing <code>userId</code> or <code>contextId</code> parameters in the banner URL.</p>
+<h3>Same Smart Content Content for Everyone</h3>
+<p><strong>Symptom:</strong> All users see identical smart content content instead of personalized recommendations.</p>
+<p><strong>Cause:</strong> Missing <code>userId</code> or <code>contextId</code> parameters in the smart content URL.</p>
 <p><strong>Solution:</strong></p>
 <ol>
-<li>Verify banner URL includes both parameters:<pre><code>...&amp;userId=CUSTOMER_123&amp;contextId=CUST123:1706745600:slot1
+<li>Verify smart content URL includes both parameters:<pre><code>...&amp;userId=CUSTOMER_123&amp;contextId=CUST123:1706745600:slot1
 </code></pre>
 </li>
 <li>Confirm template merge tags are rendering (not showing literal <code>[%CUSTOMER_ID%]</code>)</li>
@@ -10262,12 +9851,12 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <li>Test with two different userIds and compare rendered content</li>
 </ol>
 <hr>
-<h3>Wrong Products in Banner</h3>
-<p><strong>Symptom:</strong> Banner shows products, but they seem unrelated to the expected category or placement.</p>
-<p><strong>Cause:</strong> Banner placement configuration does not match intended use, or filtering is misconfigured.</p>
+<h3>Wrong Products in Smart Content</h3>
+<p><strong>Symptom:</strong> Smart Content shows products, but they seem unrelated to the expected category or placement.</p>
+<p><strong>Cause:</strong> Smart Content placement configuration does not match intended use, or filtering is misconfigured.</p>
 <p><strong>Solution:</strong></p>
 <ol>
-<li>Review banner configuration in Widget Manager</li>
+<li>Review smart content configuration in Widget Manager</li>
 <li>Verify the correct <code>bannerKey</code> is being used</li>
 <li>Check placement filters (category, tags, product types)</li>
 <li>Confirm inventory items are assigned to correct categories</li>
@@ -10275,7 +9864,7 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <hr>
 <h2>Related Topics</h2>
 <ul>
-<li><a href="#banner-deployment">Banner Deployment Guide</a> - Detailed banner implementation</li>
+<li>[Smart Content Deployment Guide](/07-smart content/smart content-deployment.md) - Detailed smart content implementation</li>
 <li><a href="#inventory-overview">Inventory Management</a> - Inventory upload and schema</li>
 <li><a href="#api-reference-overview">API Reference</a> - Complete API documentation</li>
 <li><a href="#getting-help">Getting Help</a> - Contact support for unresolved issues</li>
@@ -10292,16 +9881,16 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <li><strong>This developer documentation</strong> - Search for your specific issue or browse the troubleshooting section</li>
 <li><strong><a href="#common-issues">Common Issues Guide</a></strong> - Solutions for frequently encountered problems</li>
 </ul>
-<h3>Opti-X Admin Panel</h3>
+<h3>Personalize Admin Panel</h3>
 <p>Access at your configured Admin URL to:</p>
 <ul>
 <li>View inventory upload status and validation errors</li>
 <li>Check API key status and permissions</li>
-<li>Review banner configurations</li>
+<li>Review smart content configurations</li>
 <li>Monitor system health and recent activity</li>
 </ul>
 <h3>API Response Messages</h3>
-<p>Opti-X API responses include descriptive error messages. The <code>message</code> field often indicates exactly what went wrong:</p>
+<p>Personalize API responses include descriptive error messages. The <code>message</code> field often indicates exactly what went wrong:</p>
 <pre><code class="language-json">{
   &quot;error&quot;: &quot;validation_error&quot;,
   &quot;message&quot;: &quot;Missing required field: item_id in record 47&quot;
@@ -10314,11 +9903,11 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <li>API integration questions</li>
 <li>Inventory schema and upload issues</li>
 <li>Recommendation algorithm configuration</li>
-<li>Banner implementation troubleshooting</li>
+<li>Smart Content implementation troubleshooting</li>
 <li>Performance optimization</li>
 <li>Custom integration requirements</li>
 </ul>
-<p>Your Integration Manager has deep technical knowledge of Opti-X and direct access to engineering resources when needed.</p>
+<p>Your Integration Manager has deep technical knowledge of Personalize and direct access to engineering resources when needed.</p>
 <hr>
 <h2>Contact Your Customer Success Manager</h2>
 <p><strong>For business and account questions</strong>, contact your Customer Success Manager. They handle:</p>
@@ -10328,7 +9917,7 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <li>Best practices for your use case</li>
 <li>Training and onboarding sessions</li>
 <li>Escalation of critical issues</li>
-<li>Strategic guidance on using Opti-X effectively</li>
+<li>Strategic guidance on using Personalize effectively</li>
 </ul>
 <hr>
 <h2>Information to Provide When Requesting Help</h2>
@@ -10344,7 +9933,7 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 </thead>
 <tbody><tr>
 <td><strong>Brand key</strong></td>
-<td>Your Opti-X brand identifier</td>
+<td>Your Personalize brand identifier</td>
 <td><code>acme_retail_prod</code></td>
 </tr>
 <tr>
@@ -10415,7 +10004,7 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
   &quot;requestId&quot;: &quot;req_abc123def456&quot;
 }
 </code></pre>
-<h3>For Banner Issues</h3>
+<h3>For Smart Content Issues</h3>
 <table>
 <thead>
 <tr>
@@ -10425,18 +10014,18 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Banner key</strong></td>
+<td><strong>Smart Content key</strong></td>
 <td>The bannerKey from your implementation</td>
 <td><code>f34a724d-c41e-4716-b6b4...</code></td>
 </tr>
 <tr>
-<td><strong>Full banner URL</strong></td>
+<td><strong>Full smart content URL</strong></td>
 <td>Complete URL including all parameters</td>
 <td>Include userId and contextId values used</td>
 </tr>
 <tr>
 <td><strong>Screenshot</strong></td>
-<td>Visual of what the banner displays</td>
+<td>Visual of what the smart content displays</td>
 <td>Attach image showing the issue</td>
 </tr>
 <tr>
@@ -10525,7 +10114,7 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <tr>
 <td><strong>Low</strong></td>
 <td>Minor issue, minimal impact</td>
-<td>Cosmetic banner display issue</td>
+<td>Cosmetic smart content display issue</td>
 </tr>
 </tbody></table>
 <hr>
@@ -10543,7 +10132,7 @@ searchInput.addEventListener(&#39;input&#39;, (e) =&gt; {
 <ul>
 <li><a href="#common-issues">Common Issues</a> - Self-service troubleshooting guide</li>
 <li><a href="#api-reference-overview">API Reference</a> - Complete API documentation</li>
-<li><a href="#banner-deployment">Banner Deployment</a> - Banner implementation details</li>
+<li>[Smart Content Deployment](/07-smart content/smart content-deployment.md) - Smart Content implementation details</li>
 </ul>
 
 </section>
